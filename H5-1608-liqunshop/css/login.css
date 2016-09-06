@@ -1,0 +1,126 @@
+/*
+ * 注册登录页面
+ * 时间：2016-09-05
+ * */
+/*类别树隐藏*/
+
+.header-class-tree {
+	display: none;
+}
+/*登录主内容*/
+
+.content {
+	width: 1024px;
+	height: 413px;
+	margin: 12px auto 5px;
+	border: 1px solid #D3D3D3;
+}
+.content .bgimg {
+	height: 413px;
+	width: 660px;
+	background: url(../imgs/login-img/LJC.jpg) no-repeat;
+	background-size: cover;
+	display: inline-block;
+	vertical-align: middle;
+}
+.content .loginbox {
+	height: 230px;
+	width: 287px;
+	padding: 20px;
+	border: 1px solid #D3D3D3;
+	background: #FAFAFA;
+	color: #666;
+	display: inline-block;
+	vertical-align: middle;
+}
+.content .loginbox h2 {
+	height: 28px;
+	font-weight: 100;
+	font-size: 20px;
+	line-height: 28px;
+}
+.content .loginbox h2 span {
+	float: right;
+	font-size: 14px;
+	cursor: pointer;
+}
+.content .loginbox h2 span img {
+	vertical-align: middle;
+}
+/*form表单*/
+
+#login_form .login_form_id,
+#login_form .login_form_password {
+	height: 40px;
+	width: 287px;
+	margin-top: 9px;
+}
+#login_form .for_id {
+	height: 38px;
+	width: 38px;
+	float: left;
+	border: 1px solid #BEBDBD;
+	background: url(../imgs/login-img/icons.png)no-repeat 0 0;
+}
+#login_form .for_password {
+	height: 38px;
+	width: 38px;
+	float: left;
+	border: 1px solid #BEBDBD;
+	background: url(../imgs/login-img/icons.png)no-repeat -48px 0;
+}
+#login_form #id,
+#login_form #password {
+	height: 36px;
+	width: 244px;
+	float: left;
+	border: 1px solid #BEBDBD;
+	margin-left: -1px;
+	text-indent: 8px;
+	font-size: 14px;
+}
+#login_form .forget {
+	cursor: pointer;
+	font-size: 12px;
+	color: #666;
+	float: right;
+	margin-top: 5px;
+	text-align: right;
+	line-height: 30px;
+}
+#login_form .forget:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#login_form .submit{
+	color: #fff;
+	height: 35px;
+	width: 285px;
+	border: 1px solid #C02C2D;
+	background-color:#D73A3C;
+}
+
+#login_form .other_login{
+	font-size: 12px;
+	height: 45px;
+	color: #000;
+	line-height: 45px;
+}
+#login_form .other_login span{
+	color: #666;
+	line-height: 45px;
+	vertical-align: bottom;
+	margin-right:4px;
+	cursor: pointer;
+}
+#login_form .other_login span img{
+	vertical-align: middle;
+}
+
+
+
+
+
+
+

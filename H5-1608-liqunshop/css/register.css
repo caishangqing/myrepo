@@ -1,0 +1,130 @@
+/*
+ * 注册页面
+ * 时间2016-09-05
+ *  */
+
+body {
+	background-color: #fff;
+}
+#register{
+	height: 468px;
+	width: 866px;
+	margin: 0 auto;
+	border: 1px solid #ddd;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	border-radius: 20px;
+	background: #F2F2F2;
+	padding: 8px 66px;
+	color: #666;
+}
+#register .reg {
+	height: 40px;
+	margin-top: 31px;
+	font-size: 14px;
+	color: #666;
+	position: relative;
+}
+#register .reg label {
+	display: inline-block;
+	width: 104px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+#register .reg label b {
+	color: red;
+}
+#register .reg input {
+	width: 226px;
+	height: 16px;
+	vertical-align: middle;
+	padding: 10px 40px 10px 8px;
+	border: 1px solid #aaa;
+
+	display: inline-block;
+}
+#register .reg span {
+	height: 36px;
+	width: 30px;
+	position: absolute;
+	left: 350px;
+	top: 12px;
+}
+#register .reg span img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#register .reg span img.reg_success{
+	display: none;
+}
+
+#register .reg .msg{
+	width: 240px;
+	height: 36px;
+	border: 1px solid #F25B7C;
+	color: #F25B7C;
+	position: absolute;
+	left:390px;
+	top: 2px;
+	background:#FFEBEB;
+	display: none;
+}
+
+#register #reg_test{
+	width: 130px;
+	height: 36px;
+	font-size: 18px;
+	padding: 0;
+	text-indent: 10px;
+	letter-spacing: 1px;
+}
+.test_img{
+	width: 300px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.test_img img{
+	vertical-align: middle;
+	display: inline-block;
+}
+#register .test_img span{
+	width: 100px;
+	line-height: 40px;
+	vertical-align: middle;
+	position: static!important;
+	display: inline-block;
+	margin-left: 6px;
+}
+#register .test_img span a{
+	color: #3A78D1;
+	cursor: pointer;
+}
+.protocol{
+	font-size: 12px;
+	height: 80px;
+	line-height: 80px;
+
+}
+.submit{
+	margin-left: 104px;
+
+}
+.protocol a{
+	color: #3A78D1;
+	cursor: pointer;
+}
+
+.submit #btn{
+	height: 36px;
+	width: 270px;
+	border:0;
+	background: url(../imgs/register-img/regist-btn.jpg)no-repeat center;
+}
+
+
+
+

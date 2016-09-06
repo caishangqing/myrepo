@@ -1,0 +1,110 @@
+/*
+ * 底部样式
+ * 时间2016-09-03
+ * */
+
+#footer{
+	margin: 0 auto;
+	font-size: 12px;
+	color: #929292;
+	width: 1200px;
+	overflow: hidden;
+}
+
+ .footer-info{
+	margin:10px auto 0;
+	height: 190px;
+	border:1px solid #E3E3E3;
+}
+ .footer-info dl{
+	margin: 15px;
+	width: 130px;
+	float: left;
+}
+
+ .footer-info dl dt{
+	height: 33px;
+	line-height: 33px;
+	font-size: 14px;
+	font-weight: 900;
+	width: 130px;
+	font-family: "宋体";
+	padding-left: 5px;
+	color: #BEBEBE;
+	border-bottom: 1px solid #e3e3e3;
+}
+.footer-info dl dd{
+	margin-top: 5px;
+	margin-left: 15px;
+}
+.footer-info dl dd ul li{
+	list-style-position: outside;
+	line-height: 16px;
+	padding-top: 5px;
+	list-style-image: url(../imgs/index-img/foot_icon.jpg);
+}
+ .footer-info dl dd img{
+	display: block;
+}
+ .footer-logo{
+	height: 117px;
+}
+ .footer-bottom ul{
+	height: 16px;
+	margin: 12px auto 0;
+	width:620px;
+	display: block;
+}
+ .footer-bottom ul li{
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	border-right: 1px solid #929292;
+}
+.footer-bottom ul li a{
+	padding:0 10px;
+}
+.lastitem{
+	border-right: 0!important;
+}
+ .copy{
+	margin: 12px 0 8px 0;
+	line-height: 20px;
+	height: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+ .copy img{
+		vertical-align: middle;
+}
+ .footer-rz{
+	height: 50px;
+	width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+ .footer-rz a img{
+	width:108px;
+	height:40px;
+	border:none;
+	margin-left: 10px;
+}
+
+/*****************电梯*************/
+#footer .nav-right{
+	position: fixed;
+	top: 40%;
+	right: 72px;
+	height: 286px;
+	width: 34px;
+	display: none;
+}
+#footer .nav-right ul li{
+	width: 34px;
+	height: 34px;
+	border: 1px solid #EFEFEF;
+}
+#footer .nav-right ul li img{
+	height: 100%;
+	width: 100%;
+}

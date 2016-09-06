@@ -1,0 +1,712 @@
+/*重置样式表*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+	font-family: ‘Arial Black’, Gadget, sans-serif;
+}
+fieldset,
+img {
+	border: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+ul,
+ol {
+	list-style: none;
+}
+body {
+	color: #333;
+	font: 16px/24px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+	background: #fff;
+	/* overflow-y:scroll;*/
+
+	overflow-x: hidden;
+}
+a {
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:visited {
+	color: #666;
+}
+.fl {
+	float: left !important;
+	display: block;
+}
+.fr {
+	float: right !important;
+	display: block;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+
+.red,
+.red a {
+	color: #f13031!important;
+}
+.clr {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+.cbody {
+	margin: 0 auto;
+	overflow: visible;
+	width: 1200px;
+}
+/*首页头部*/
+
+.header {
+	color: #777;
+	font-size: 12px;
+	z-index: 100;
+}
+.header-info {
+	width: 1200px;
+	overflow: visible;
+	margin: 0 auto;
+	height: 24px;
+	line-height: 24px;
+	z-index: 101;
+}
+#headLoginInfo {
+	margin: 0;
+	text-align: left;
+}
+/*头部右边导航*/
+
+.header-info-right {
+	float: right;
+}
+.header-info-right > li {
+	float: left;
+	margin: 0 6px;
+	padding: 0 6px;
+}
+.header-spacing {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 20px;
+	color: #ccc;
+}
+.header .spacing {
+	margin: 0 6px;
+	padding: 0 6px;
+	color: #777;
+}
+.header-icon {
+	margin-right: 5px;
+	margin-top: 2px;
+}
+.header-attach img {
+	margin: 3px 0 0 5px;
+	float: left;
+}
+/*头部搜索*/
+
+.header-search {
+	height: 100px;
+}
+.header-logo {
+	height: 99px;
+	display: inline-block;
+	width: 350px;
+	position: relative;
+	margin-right: 3px;
+	float: left;
+	text-indent: -9999px;
+}
+.header-logo img {
+	margin-top: 15px;
+}
+.header-logo-ad img {
+	margin-top: 15px;
+	position: absolute;
+	left: 190px;
+	top: 0;
+	z-index: 2;
+}
+/*搜索框*/
+
+.header-search-area {
+	margin: 25px 0 0 15px;
+	width: 540px;
+	float: left;
+}
+.header-search-main {
+	height: 35px;
+	border: 3px solid #fb5859;
+	position: relative;
+}
+#header-search-input {
+	border: 0;
+	color: #aaa;
+	font-size: 14px;
+	height: 14px;
+	padding: 10px 0;
+	text-align: left;
+	width: 420px;
+}
+#header-search-form {
+	text-align: left;
+}
+#header-search-form input {
+	float: left;
+}
+#header-search-btn {
+	padding: 0;
+	background: url(../imgs/index-img/search_button.jpg);
+	border: 0;
+	cursor: pointer;
+	height: 35px;
+	width: 85px;
+}
+/*提示文字*/
+
+.header-search-word li {
+	padding: 0 5px;
+	float: left;
+}
+.header-word-title {
+	color: #555;
+}
+/*购物车*/
+
+.header-search-cart {
+	width: 270px;
+	float: right;
+	margin-top: 30px;
+}
+.header-search-cart .headerCarCount {
+	background: url(../imgs/index-img/cart_count.png)no-repeat center 0 0;
+	color: white;
+	font-weight: 900;
+	height: 21px;
+}
+/*重置样式表*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+}
+fieldset,
+img {
+	border: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+ul,
+ol {
+	list-style: none;
+}
+body {
+	color: #333;
+	font: 16px/24px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+	background: #fff;
+	/* overflow-y:scroll;*/
+
+	overflow-x: hidden;
+}
+a {
+	color: #999;
+	text-decoration: none;
+	font-size: 12px;
+}
+a:visited {
+	color: #666;
+}
+.row-wrap {
+	background: #fff;
+	clear: both;
+	margin: 0 auto;
+	height: 10px;
+	width: 1200px;
+}
+.fl {
+	float: left !important;
+	display: block;
+}
+.fr {
+	float: right !important;
+	display: block;
+}
+.hide {
+	display: none;
+}
+.cbody {
+	margin: 0 auto;
+	overflow: visible;
+	width: 1200px;
+}
+/*头部广告*/
+
+.headad {
+	height: auto;
+	margin: 0 auto;
+	border: 0;
+}
+.headad img {
+	height: 100%;
+	width: 100%;
+}
+/*首页头部*/
+
+.header {
+	color: #777;
+	font-size: 12px;
+	z-index: 100;
+}
+.header-info {
+	width: 1200px;
+	overflow: visible;
+	margin: 0 auto;
+	height: 24px;
+	line-height: 24px;
+	z-index: 101;
+}
+#headLoginInfo {
+	margin: 0;
+	text-align: left;
+}
+/********客户服务********/
+
+.header .server {
+	position: relative;
+}
+.border {
+	margin-top: -1px!important;
+	margin-left: 5px!important;
+	margin-right: 5px!important;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	background: #fff;
+}
+.header-more-service {
+	display: none;
+	background: #fff;
+	position: absolute;
+	width: 67px;
+	top: 23px;
+	left: -1px;
+	z-index: 999;
+	padding: 0 6px;
+	border: 1px solid #ccc;
+	border-top: 0;
+}
+.header-more-service li {
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+}
+.header-more-service li a {
+	color: #777;
+}
+/*头部右边导航*/
+
+.header-info-right {
+	float: right;
+}
+.header-info-right > li {
+	float: left;
+	margin: 0 6px;
+	padding: 0 6px;
+}
+.header-spacing {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 20px;
+	color: #ccc;
+}
+.header .spacing {
+	margin: 0 6px;
+	padding: 0 6px;
+	color: #777;
+}
+.header-icon{
+	margin-right: 5px;
+	margin-top: 2px;
+}
+.header-code{
+	display: none;
+	position: absolute;
+	left: -30px;
+	top: 0px;
+}
+.header-tdcode{
+	position: relative;
+	display:inline-block;
+}
+.header-tdcode:hover .header-code{
+	display: block;
+}
+.header-attach a{
+	display: inline-block;
+}
+.header-attach img {
+	margin: 3px 0 0 5px;
+
+}
+
+
+
+/*头部搜索*/
+
+.header-search {
+	height: 100px;
+}
+.header-logo {
+	height: 99px;
+	display: inline-block;
+	width: 350px;
+	position: relative;
+	margin-right: 3px;
+	float: left;
+	text-indent: -9999px;
+}
+.header-logo img {
+	margin-top: 15px;
+}
+.header-logo-ad img {
+	margin-top: 15px;
+	position: absolute;
+	left: 190px;
+	top: 0;
+	z-index: 2;
+}
+/*搜索框*/
+
+.header-search-area {
+	margin: 25px 0 0 15px;
+	width: 540px;
+	float: left;
+}
+.header-search-main {
+	height: 35px;
+	border: 3px solid #fb5859;
+	position: relative;
+}
+#header-search-input {
+	border: 0;
+	color: #aaa;
+	font-size: 14px;
+	height: 14px;
+	padding: 10px 0;
+	text-align: left;
+	width: 420px;
+}
+#header-search-form {
+	text-align: left;
+}
+#header-search-form input {
+	float: left;
+}
+#header-search-btn {
+	padding: 0;
+	background: url(../imgs/index-img/search_button.jpg);
+	border: 0;
+	cursor: pointer;
+	height: 35px;
+	width: 85px;
+}
+/*提示文字*/
+
+.header-search-word li {
+	padding: 0 5px;
+	float: left;
+}
+.header-word-title {
+	color: #555;
+}
+/*购物车*/
+
+.header-search-cart {
+	width: 270px;
+	float: right;
+	margin-top: 30px;
+}
+.header-search-cart .headerCarCount {
+	background: url(../imgs/index-img/cart_count.png) no-repeat;
+	color: white;
+	font-weight: 900;
+	height: 21px;
+	position: absolute;
+	left: 15px;
+	top: -10px;
+	width: 21px;
+	text-align: center;
+	line-height: 21px;
+}
+/*头部导航*/
+
+.header-nav {
+	height: 35px;
+	color: #525252;
+}
+#headAllClass {
+	margin-left: 20px;
+	width: 190px;
+}
+.header-nav li {
+	color: #525252;
+	float: left;
+	font-size: 15px;
+	line-height: 37px;
+	height: 35px;
+	margin-left: 42px;
+	text-align: left;
+}
+.header-nav li a {
+	font-size: 15px;
+}
+.header-nav li a:hover,
+.header-nav li a:active {
+	color: #f13031;
+}
+#navFirst {
+	margin-left: 20px!important;
+}
+#navPoint {
+	margin-right: 15px;
+	float: right;
+	width: 87px;
+}
+/*全部商品分类*/
+
+.header-class-area {
+	height: 0;
+}
+.header-class {
+	left: 0;
+	position: absolute;
+	top: -37px;
+	z-index: 100;
+	width: 190px;
+	background-color: #c81622;
+}
+.header-class-title {
+	color: white;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 37px;
+	text-align: center;
+	width: 190px;
+	float: left;
+	background-color: #b1191b;
+}
+.header-class-tree {
+	height: 451px;
+	width: 190px;
+	position: relative;
+	float: left;
+	border-top: 2px solid #b1191b;
+	display: block;
+	color: white;
+}
+.header-class-tree .header-first-class{
+	width: 190px;
+	height: 50px;
+	border: 0;
+}
+
+
+.class-title {
+	padding: 0 10px 0 20px;
+	height: 50px;
+	overflow: hidden;
+}
+.title {
+	background: url(../imgs/index-img/memu_bg.jpg) no-repeat;
+	padding-left: 26px;
+	line-height: 30px;
+	height: 30px;
+	font-size: 15px;
+}
+.class-title .title span {
+	color: white;
+}
+.title-pop {
+	padding-left: 26px;
+	line-height: 20px;
+	height: 20px;
+}
+.title-pop a {
+	color: white;
+}
+.title-pop a:hover {
+	text-decoration: underline;
+}
+.class-fashion {
+	background-position: 0 -405px;
+}
+.class-food {
+	background-position: 0 0;
+}
+.class-drink {
+	background-position: 0 -55px;
+}
+.class-clean {
+	background-position: 0 -105px;
+}
+.class-day {
+	background-position: 0 -155px;
+}
+.class-toy {
+	background-position: 0 -205px;
+}
+.class-mobile {
+	background-position: 0 -252px;
+}
+.class-tv {
+	background-position: 0 -305px;
+}
+.class-virtual {
+	background-position: 0 -355px;
+}
+/*
+ * 隐藏的导航图
+ *
+ * */
+.header-class-tree .header-first-class:hover{
+	background-color: #b1191b;
+}
+.header-class-tree .header-first-class:hover>.header-class-pop{
+	display: block!important;
+}
+
+
+.header-class-tree .header-class-pop {
+	background: #fff;
+	position: absolute;
+	left: 190px;
+	border: 1px solid #ec2e2e;
+	min-height: 446px;
+	width: 735px;
+	display: none;
+	top: 0;
+	padding: 3px 0 0 15px;
+}
+
+
+.header-second-class {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	overflow: hidden;
+	width: 235px;
+}
+.header-third-class{
+	width: 100%;
+	overflow: hidden;
+}
+
+.header-third-class a,.header-brand a{
+	padding: 0 5px;
+	white-space: nowrap;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	margin-left: -6px;
+	border-left:1px solid #ccc;
+}
+.header-third-class a:hover,.header-brand a:hover{
+	color: red;
+}
+.second-title {
+	border-bottom: 1px solid black;
+	font-size: 13px;
+	font-weight: bold;
+	height: 36px;
+	vertical-align: middle;
+	line-height: 45px;
+	margin-bottom: 5px;
+}
+.second-title img{
+	height:36px;
+	width: 36px;
+	display: inline-block;
+}
+.second-title a{
+	vertical-align: top;
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	font-weight: 900;
+}
+
+.header-brand {
+	border-top: 1px dotted #666;
+}
+.header-brand .brand-title{
+	color: #535154;
+	font-size: 13px;
+	height: 27px;
+	line-height: 27px;
+	font-weight: 900;
+}
+.header-class-pop .column{
+	width: 245px;
+	float: left;
+	overflow: hidden;
+}
