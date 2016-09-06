@@ -49,15 +49,13 @@ body {
 
 	overflow-x: hidden;
 }
+
 a {
-	color: #999;
+	color: #666;
 	text-decoration: none;
 	font-size: 12px;
 }
 
-a:visited {
-	color: #666;
-}
 .fl {
 	float: left !important;
 	display: block;
@@ -218,87 +216,8 @@ a:visited {
 	font-weight: 900;
 	height: 21px;
 }
-/*重置样式表*/
 
-html,
-body,
-ul,
-li,
-ol,
-dl,
-dd,
-dt,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset,
-legend,
-img {
-	margin: 0;
-	padding: 0;
-}
-fieldset,
-img {
-	border: none;
-}
-address,
-caption,
-cite,
-code,
-dfn,
-th,
-var {
-	font-style: normal;
-	font-weight: normal;
-}
-ul,
-ol {
-	list-style: none;
-}
-body {
-	color: #333;
-	font: 16px/24px "SimSun", "宋体", "Arial Narrow", HELVETICA;
-	background: #fff;
-	/* overflow-y:scroll;*/
 
-	overflow-x: hidden;
-}
-a {
-	color: #999;
-	text-decoration: none;
-	font-size: 12px;
-}
-a:visited {
-	color: #666;
-}
-.row-wrap {
-	background: #fff;
-	clear: both;
-	margin: 0 auto;
-	height: 10px;
-	width: 1200px;
-}
-.fl {
-	float: left !important;
-	display: block;
-}
-.fr {
-	float: right !important;
-	display: block;
-}
-.hide {
-	display: none;
-}
-.cbody {
-	margin: 0 auto;
-	overflow: visible;
-	width: 1200px;
-}
 /*头部广告*/
 
 .headad {

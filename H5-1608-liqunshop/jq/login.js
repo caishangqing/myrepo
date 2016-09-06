@@ -5,14 +5,14 @@
 
 $(function() {
 
+
+$(".header-class-tree").hide();
 	$(".header-class").on("mouseenter", ".header-class-title", function() {
-		$(".header-class-tree").slideDown(400);
+		$(".header-class-tree").stop(true,false).slideDown(400);
 	})
 	$(".header-class").on("mouseleave", function() {
-		$(".header-class-tree").slideUp(400);
+		$(".header-class-tree").stop(true,false).slideUp(400);
 	})
-
-
 
 
 })

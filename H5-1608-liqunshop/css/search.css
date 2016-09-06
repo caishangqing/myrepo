@@ -1,0 +1,121 @@
+/*
+ * 搜素页面css
+ *
+ * */
+
+.search_content{
+	min-height:400px;
+}
+
+.search_content .search_top_position{
+	height: 34px;
+	overflow: hidden;
+}
+
+.search_content .search_top_position ul li{
+	float: left;
+	line-height: 34px;
+	height: 34px;
+	font-size: 13px;
+}
+.search_content .search_top_position ul li h3{
+	text-indent: -999px;
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+	background: url(../imgs/search-img/brand.gif) no-repeat -119px 3px;
+}
+
+.search_left{
+	width:205px;
+	float: left;
+}
+
+ .bc{
+	width: 203px;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 2px solid #CC0000;
+	margin-bottom: 10px;
+}
+
+
+.search_left .bc .bc_title{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: 900;
+	text-align: left;
+}
+
+.subclass .bc_title h3{
+	padding-left: 8px;
+}
+.hotgoods .bc_title h3{
+	text-align: center;
+}
+.search_left .class_tree .item{
+
+}
+.search_left .class_tree .item .item_title{
+	border-bottom: 1px solid #ddd;
+	border-top:1px solid #ddd;
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+	font-weight: 100;
+	background:#F7F7F7;
+}
+
+.search_left .class_tree .item .item_title i{
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+	display: inline-block;
+	margin:0 10px;
+	background: url(../imgs/search-img/menu1.png)no-repeat;
+	background-position:0 0;
+}
+.search_left .class_tree .item .item_list{
+	padding-left: 36px;
+}
+
+.search_left .hotgood_list{
+	padding:0 10px;
+}
+.search_left .hotgood_list li {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+.search_left .hotgood_list li dl dt{
+	padding:10px 15px;
+}
+.search_left .hotgood_list li dl dt img{
+	height: 150px;
+	width: 150px;
+	display: block;
+}
+.search_left .hotgood_list li dl dd{
+	font-size: 12px;
+	line-height: 22px;
+	font-size: 13px;
+}
+.search_left .hotgood_list li dl dd a{
+	white-space: nowrap;
+	text-overflow: clip;
+	display: block;
+}
+
+.search_right{
+	width: 983px;
+	float: right;
+}
+.search_right .sr_title{
+	height: 71px;
+	border: 1px solid #ddd;
+}
+
