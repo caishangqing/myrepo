@@ -1,24 +1,268 @@
+.hot{
+	color: #CF1700!important;
+}
 
+#detail_main{
+	margin-top: 16px;
+}
 
+.detail_left{
+	float: left;
+	width: 220px;v
+}
+.dl_box{
+	width: 218px;
+	border: 1px solid #DCDCDC;
+	margin-bottom: 15px;
+}
 
+.dl_box h4{
+	padding-left: 10px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	font-weight: 900;
+	color: #666;
+	background: #f9f9f9;
+	border-bottom: 1px solid #DCDCDC;
+}
 
+.dl_box .c1 li,.dl_box .c2 li{
+	padding-left:10px;
+	display: inline-block;
+}
+.dl_box .c1 a,.dl_box .c2 a{
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+}
+.dl_box .c1 li:hover a,.dl_box .c2 li:hover a{
+	color: #f1702f;
+}
+.dl_box .c1 li{
+	width: 95px;
+}
+.dl_box .c2 li{
+	width: 55px;
+}
 
+.c3{
+	padding: 19px;
+	background: #f9f9f9;
+}
+.c3 li{
+	overflow: hidden;
+	margin-bottom: 24px;
+	width: 100%;
+	border-bottom: 1px solid #DCDCDC;
+}
+.c3 li dl dt img{
+	height: 100%;
+	width: 100%;
+}
+.c3 li dl dt{
+	margin-bottom: 6px;
+}
 
+.c3 li dl dd{
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	overflow: hidden;
+}
+.c3 li dl dd a{
+	font-size: 12px;
+	color: #666;
 
+}
 
+/*右边主要内容*/
+.detail_right{
+	float: right;
+	width: 970px;
+}
 
+/*导航条*/
+.dr_nav{
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+.dr_nav ul li{
+	display: inline-block;
+}
+.dr_nav ul li a{
+	color: #666;
+	font-size: 12px;
+}
+.dr_nav .drn_f1 a{
+	color: black;
+	font-size: 18px;
+}
+/*主要内容*/
+.dr_main{
+	height: 518px;
+}
+.drm_left{
+	width: 278px;
+	float: left;
+	height: 518px;
+}
+.drm_right{
+	float: right;
+	height: 518px;
+	width: 690px;
+}
+.drm_left .drml_smimg{
+	height: 240px;
+	width: 240px;
+	border: 1px solid #DADADA;
+	box-shadow: 6px 4px 2px #DADADA;
+	margin-bottom: 16px;
+}
+.drm_left .drml_smimg img{
+	height:230px;
+	width: 230px;
+	vertical-align: bottom;
+	margin: 5px;
+}
+.drm_left .drml_bgimg{
+	background: url(../imgs/detail-img/bg.png)no-repeat;
+	height: 240px;
+	width: 240px;
+}
+.drmr_title{
+	height: 50px;
+	line-height: 25px;
+	font-size: 16px;
+	border-bottom: 1px dotted #ccc;
+}
+.drmr_title h3{
+	color: #666;
+	font-size: 16px;
+	font-weight: 700;
+}
+.drmr_title span{
+	color: #EA393C;
+	font-weight: 700;
 
+}
+.drmrc_character{
+	width: 472px;
+	margin-top:9px;
+}
 
+.drmrc_character li span{
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	font-size: 12px;
+	color: black;
 
+}
 
+.cname{
+	width: 70px;
+}
+.price{
+	font-size: 18px!important;
+	color: #E81D0E!important;
+	font-weight: 900;
+}
 
+.select{
+	padding-top: 12px;
+	border-top: 1px dotted #ccc;
+}
+.select ul{
+	vertical-align: top;
 
+	width: 390px;
+	display: inline-block;
+}
 
+.select_btn{
+	display: inline-block;
+	padding: 4px 6px;
+	font-size: 12px;
+	color: #666;
+	border: 2px solid #CDCDCD;
+	margin: 3px 4px;
+	cursor: pointer;
+}
+.select_btn:hover{
+	color: #CF1700;
+}
+.drmrc_character .num button{
+	background-image: url(../imgs/detail-img/newicon201301014.png);
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 15px;
+	border: 0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.drmrc_character .goods_num{
+	height: 18px;
+	width: 35px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+.drmrc_character .num .num_prev{
+	background-position: -216px -206px;
+}
+.drmrc_character .num .num_prev:hover{
+	background-position: -216px -190px;
+}
+.drmrc_character .num .num_next{
+	background-position: -232px -206px;
+}
+.drmrc_character .num .num_next:hover{
+	background-position: -232px -190px;
+}
 
+.selected{
+	line-height: 40px;
+	height: 40px;
+	color: #F01D0E;
+	font-size: 12px;
+}
+.detail_addshopcar{
+	margin-left: 10px;
+	display: inline-block;
+	height: 40px;
+	width: 135px;
+	background-image: url(../imgs/detail-img/buy.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.detail_collect{
+	margin-left: 17px;
+	display: inline-block;
+	height: 40px;
+	width: 72px;
+	background-image: url(../imgs/detail-img/shoucang.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+.detail_more{
+	width: 690px;
+	border: 1px solid #eee;
+	font-size: 12px;
+}
 
+.detail_more span{
+	text-indent: 8px;
+	float: left;
+	width: 96px;
+	line-height: 25px;
+	color:#EF4009;
+}
+.detail_more ul li{
 
-
+}
 
 
 
