@@ -100,9 +100,7 @@
 	font-size: 18px;
 }
 /*主要内容*/
-.dr_main{
-	height: 518px;
-}
+
 .drm_left{
 	width: 278px;
 	float: left;
@@ -176,7 +174,6 @@
 }
 .select ul{
 	vertical-align: top;
-
 	width: 390px;
 	display: inline-block;
 }
@@ -251,6 +248,9 @@
 	width: 690px;
 	border: 1px solid #eee;
 	font-size: 12px;
+	line-height: 25px;
+	position: relative;
+	margin-top: 30px;
 }
 
 .detail_more span{
@@ -259,10 +259,241 @@
 	width: 96px;
 	line-height: 25px;
 	color:#EF4009;
+	font-weight: 900;
 }
-.detail_more ul li{
+.detail_more .push_list{
+	display: inline-block;
+	vertical-align: middle;
+}
+.detail_more .push_list li{
+	display: inline-block;
+	margin-right: 34px;
+	height: 25px;
+	line-height: 25px;
+}
+.detail_more .add_list{
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	background: url(../imgs/detail-img/brandClassShowMore.png)no-repeat;
+}
+
+/* 评论和介绍   */
+
+/*切换按钮*/
+.dr_infro{
+	margin-top: 30px;
+}
+
+.dri_btn{
+	display: block;
+	height: 30px;
+	border-bottom:1px solid #DFDFDF;
+	border-top: 2px solid #989898;
+	background-color:#F8F7F5;
+	font-size: 13px;
+}
+.dri_btn li{
+	cursor: pointer;
+	height: 30px;
+	width: 98px;
+	text-align: center;
+	line-height: 30px;
+	border-left:1px solid #F8F7F5;
+	border-right:1px solid #F8F7F5;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.dr_infro .dri_btn .drib_active{
+	background-color: #fff;
+	height: 35px;
+	margin-top: -6px;
+	line-height: 34px;
+	border-top: 2px solid red;
+	border-bottom: 0;
+	color: #FF0000;
+	border-right:1px solid #DFDFDF;
+	border-left:1px solid #DFDFDF;
+}
+.dri_intro{
+	margin:0 auto;
+	width: 750px;
+}
+.drii_img{
+	overflow: hidden;
+}
+.drii_img img{
+
+	width: 100%;
+}
+.dri_intro p.warn{
+	color: red;
+	height: 35px;
+	font-size: 14px;
+	width: 750px;
+	 overflow: hidden;
+	 line-height: 35px;
+}
+/*商品评论*/
+.dri_comm{
+	margin-top: 10px;
 
 }
+.dric_rate{
+	height: 156px;
+	border:1px solid #ccc;
+	border-top: 2px solid #999;
+}
+.dric_rate h2{
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+	text-indent: 12px;
+}
+
+.dric_rate dl dt{
+	width: 190px;
+	vertical-align: bottom;
+	display: inline-block;
+}
+.dric_rate dl dt p{
+	text-align: center;
+}
+.dricr_num{
+	color: #E4393C;
+	font-size: 16px;
+	margin-top: 20px;
+
+}
+.rate_num{
+	font-size: 36px;
+}
+.rate_name{
+		font-size: 12px;
+		color: #999;
+}
+
+.dric_rate dl dd{
+
+	display: inline-block;
+	width: 182px;
+	border-right: 1px solid #EFEFEF;
+}
+
+.dric_rate .dricr_percent li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+.dric_rate .dricr_percent li .per_bg{
+	display: inline-block;
+	width: 100px;
+	height: 10px;
+	background-color: #ccc;
+}
+.dric_rate .dricr_percent li span{
+	color: #999;
+	display: inline-block;
+	width: 40px;
+}
+.per_bg .per_len{
+	height: 10px;
+	width: 0;
+	background-color: #E4393C;
+}
+
+/*会员评论*/
+
+.dricm_content li dl{
+	margin-top:10px;
+}
+.dricm_content li dl dt{
+	display: inline-block;
+	height: 100px;
+	width: 124px;
+	vertical-align: bottom;
+	text-align: center;
+}
+.dricm_content li dl dt a{
+	margin-top: 14px;
+	display:inline-block;
+	height: 58px;
+	width: 58px;
+	line-height: 58px;
+	text-align:center;
+	border: 1px solid #eee;
+	box-shadow: 2px -2px 2px #eee;
+}
+.dricm_content li dl dt a img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.user_id{
+	font-size: 12px;
+	color: #aaa;
+}
+
+.dricm_content li dl dd{
+	height: 100px;
+	width: 790px;
+	padding:0 20px;
+	display: inline-block;
+	border: 1px solid #D0E4C2;
+	position: relative;
+	background-color: #FCFFFA;
+}
+.dricm_content li dl dd p{
+	font-size: 12px;
+	color: #9C9A9C;
+	margin-left: 20px;
+	margin-top: 12px;
+}
+.corner{
+	height: 26px;
+	width: 14px;
+	background-image: url("../imgs/detail-img/newicon201301014.png");
+	background-repeat: no-repeat;
+	background-position: -256px -47px;
+	position: absolute;
+	left: -14px;
+	top:45px;
+}
+.comm_top{
+	padding: 0 20px 0 5px;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #D0E4C2;s
+}
+.comm_top .comm_star{
+	width: 75px;
+	height: 14px;
+	display: inline-block;
+	background: url(../imgs/detail-img/newicon201301014.png)no-repeat;
+}
+
+.comm_txt{
+	line-height: 24px;
+	font-size: 12px;
+	color: black;
+
+}
+
+.comm_page{
+
+	padding: 0 30px;
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+.comm_page a{
+		color: #8F8CE6;
+}
+
+
 
 
 
