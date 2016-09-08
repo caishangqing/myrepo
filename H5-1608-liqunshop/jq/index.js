@@ -98,7 +98,7 @@ $(function() {
 		var that = this;
 		var $endTime = $(this).attr("data-time");
 		$(this).countdown($endTime, function(e) {
-			$(that).find("span").text(e.strftime('%D 天 %H:%M:%S'))
+			$(that).find("span").text(e.strftime('%D天 %H:%M:%S'))
 		})
 	})
 

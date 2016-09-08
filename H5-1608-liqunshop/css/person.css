@@ -1,0 +1,108 @@
+/*个人信息维护页面*/
+
+.person{
+	width: 1008px;
+	margin: 10px auto 20px;
+}
+
+.person_left{
+	width: 176px;
+	border: 1px solid #C9C9C9;
+	float: left;
+}
+.person_left h2{
+	width: 176px;
+	background-color: #F0F0F0;
+	height: 37px;
+	line-height: 37px;
+	text-indent: 13px;
+	color: #FB0507;
+	font-size: 16px;
+	border-bottom: 1px solid #E8E8E8;
+}
+.person_left ul{
+	margin-bottom: 10px;
+}
+.person_left ul li{
+	padding-left: 34px;
+	background: url(../imgs/person-img/mcml.jpg)no-repeat 145px center;
+}
+.person_left ul li a{
+	line-height: 26px;
+	height: 26px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.person_left ul li.tit{
+	height: 36px;
+	line-height: 36px;
+	padding: 0;
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+	margin-bottom: 7px;
+	background: none;
+	background-image: none;
+}
+.person_left ul li.tit span.person_btn{
+	width: 34px;
+	height: 36px;
+	vertical-align: bottom;
+	display: inline-block;
+	background: url(../imgs/person-img/mcmu.jpg)no-repeat center;
+}
+.person_left ul li span.per_icon{
+	float: right;
+	height: 26px;
+}
+.person_left ul li .red{
+	font-size: 12px;
+}
+
+.person_right{
+	width: 814px;
+	border: 1px solid #ddd;
+	float: right;
+}
+
+.person_right h3{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #C40001;
+	border-bottom: 2px solid #C40001;
+	text-indent: 12px;
+}
+.person_infor{
+	padding: 24px 0 0 100px;
+}
+
+.pi_content .pic_row{
+	height: 40px;
+	line-height: 40px;
+}
+.picr_tit{
+	width: 68px;
+	display: inline-block;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.person_submit{
+	width: 68px;
+	height: 24px;
+	margin-left: 68px;
+	border: 0;
+	background: url(../imgs/person-img/mUserb.jpg)no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+

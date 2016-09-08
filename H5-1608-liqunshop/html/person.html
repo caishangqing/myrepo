@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>会员中心账户资料-利群商城</title>
+<link rel="stylesheet" type="text/css" href="../css/head.css" />
+<link rel="stylesheet" type="text/css" href="../css/person.css" />
+<link rel="stylesheet" href="../css/foot.css" />
+<script src="../jq/jqm.js"></script>
+<script src="../jq/jquery.cookie.js"></script>
+<script src="../jq/login.js"></script>
+<script src="../jq/login.js"></script>
+</head>
+
+<body>
+<div class="header">
+<!--顶部信息-->
+<div class="header-info cbody">
+<div id="headLoginInfo" class="fl">
+Hi，欢迎来到利群商城！
+<a href="javascript:;">请登录 </a>
+<a href="javascript:;">免费注册</a>
+</div>
+<ul class="header-info-right">
+<li><a href="javascript:;">我的订单</a>
+</li>
+<li class="header-spacing">|</li>
+<li>
+<img class="header-icon fl" alt="" src="../imgs/index-img/member_center.jpg" />
+<a href="javascript:;">会员中心</a>
+</li>
+<li class="header-spacing">|</li>
+<li class="server">
+<span class="fl">客服服务</span>
+<img class="header-icon" src="../imgs/index-img/customer_service.jpg" />
+<ul class="header-more-service">
+<li><a href="javascript:;">帮助中心</a>
+</li>
+<li><a href="javascript:;">售后服务</a>
+</li>
+<li><a href="javascript:;">在线投诉</a>
+</li>
+</ul>
+</li>
+<li class="header-spacing">|</li>
+<li>
+<img src="../imgs/index-img/liqun_mobile.jpg" class="header-icon fl" alt="" />
+<a href="javascript:;">手机利群</a>
+</li>
+<li class="spacing">|</li>
+<li>
+<a href="javascript:;">利群官网</a>
+</li>
+<li class="header-spacing">|</li>
+<li class="header-attach">
+<span class="fl">关注利群:</span>
+<span class="header-tdcode">
+<img class="header-icon"   src="../imgs/index-img/tdcode.jpg" alt="" />
+<img class="header-code"   src="../imgs/index-img/code_small.jpg" alt="" />
+</span>
+<a href="javascript:;">
+<img src="../imgs/index-img/qq.jpg" alt="" />
+</a>
+<a href="javascript:;">
+<img src="../imgs/index-img/sina.jpg" alt="" />
+</a>
+</li>
+</ul>
+</div>
+<!-- 搜索行 -->
+<div class="header-search cbody">
+<h1 class="header-logo">利群商城
+<a href="javascript:;">
+<img class="fl"   src="../imgs/index-img/logo.jpg" alt="" />
+</a>
+<div class="header-logo-ad">
+<a href="javascript:;">
+<img   src="../imgs/index-img/2966.gif"/>
+</a>
+</div></h1>
+<!--搜索框-->
+<div class="header-search-area">
+<div class="header-search-main">
+<img class="fl" src="../imgs/index-img/search.jpg" alt="" />
+<form action="javascript:;" name="header-search-form" id="header-search-form">
+<input type="text" id="header-search-input" autocomplete="off" name="keyword" />
+<input type="text" id="header-search-btn" value="" />
+</form>
+<ul id="header-search-tip">
+
+</ul>
+</div>
+<ul class="header-search-word">
+<li class="header-word-title">热门搜索:</li>
+<li><a href="javascript:;">开学</a>
+</li>
+<li><a href="javascript:;">泉林本色</a>
+</li>
+<li><a href="javascript:;">全球购化妆</a>
+</li>
+<li><a href="javascript:;">贝亲</a>
+</li>
+<li><a href="javascript:;">百雀羚</a>
+</li>
+<li><a href="javascript:;">养生家电</a>
+</li>
+<li><a href="javascript:;">月饼礼盒</a>
+</li>
+<ul>
+</div>
+<!--购物车-->
+<div class="header-search-cart">
+<div class="fl relative">
+<a href="javascript:;">
+<img src="../imgs/index-img/go_cart.jpg" alt="" />
+</a>
+<div class="headerCarCount">0</div>
+</div>
+<div class="fr">
+<img src="../imgs/index-img/hot_tel.jpg" alt="" />
+</div>
+</div>
+</div>
+<!-- 导航 -->
+<ul class="header-nav relative cbody">
+<img class="absolute" style="left: 344px;top: 3px;width: 28px;height: 18px;" src="../imgs/index-img/new.jpg" alt="" />
+<img class="absolute" style="left: 430px;top:3px;height: 18px;width: 28px;" src="../imgs/index-img/hot.jpg" alt="" />
+<li id="headAllClass" style="margin-left: 0;">&nbsp;</li>
+<li class="red" id="navFirst">
+<a href="javascript:;">首页</a>
+</li>
+<li><a href="javascript:;">利群网商</a>
+</li>
+<li><a href="javascript:;">全球购</a>
+</li>
+<li><a href="javascript:;">生鲜</a>
+</li>
+<li><a href="javascript:;">超市</a>
+</li>
+<li><a href="javascript:;">母婴馆</a>
+</li>
+<li><a href="javascript:;">利群网</a>
+</li>
+<li><a href="javascript:;">医药</a>
+</li>
+<li><a href="javascript:;">积分商城</a>
+</li>
+<li id="navPoint">
+<a href="javascript:;">
+<img src="../imgs/index-img/qiandao.jpg" alt="" />
+</a>
+</li>
+</ul>
+<!-- 隐藏导航  -->
+<div class="header-class-area relative cbody">
+<div class="header-class">
+<div class="header-class-title">
+全部商品分类
+</div>
+<ul class="header-class-tree">
+<!-----------------------这里面放商品分类------------------->
+
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-fashion title">
+		<span>全球购</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">母婴</a>
+		<a href="javascript:;">食品保健</a>
+		<a href="javascript:;">美妆</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="header-second-class">
+		<div class="second-title">
+			<img src="../imgs/index-img/icon_gbmy.jpg">
+			<a href="javascript:;">母婴用品</a>
+			<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+		</div>
+		<div class="header-third-class">
+			<a href="javascript:;">奶粉</a>
+			<a href="javascript:;">营养辅食</a>
+			<a href="javascript:;">尿裤湿巾</a>
+			<a href="javascript:;">喂养用品</a>
+			<a href="javascript:;">孕产妇专区</a>
+			<a href="javascript:;">洗护用品</a>
+			<a href="javascript:;">车床玩具</a>
+			<div class="clr"></div>
+		</div>
+		<div class="header-brand">
+			<div class="brand-title"> 品牌 </div>
+			<div class="brand-area">
+				<a href="javascript:;">Nutrilon</a>
+				<a href="javascript:;">贝拉米</a>
+				<a href="javascript:;">泓乐</a>
+				<a href="javascript:;">特福芬</a>
+				<a href="javascript:;">喜宝</a>
+				<a href="javascript:;">Friso</a>
+				<a href="javascript:;">美赞臣</a>
+				<a href="javascript:;">Nature’s care</a>
+				<a href="javascript:;">Ddrops</a>
+				<a href="javascript:;">童年时光</a>
+				<a href="javascript:;">小熊糖</a>
+				<a href="javascript:;">世界最好</a>
+				<a href="javascript:;">Nordic Naturals</a>
+				<a href="javascript:;">嘉宝</a>
+				<a href="javascript:;">禧贝</a>
+				<a href="javascript:;">喜宝</a>
+				<a href="javascript:;">大王</a>
+				<a href="javascript:;">花王</a>
+				<a href="javascript:;">尤妮佳</a>
+				<a href="javascript:;">麦肯齐</a>
+				<a href="javascript:;">艾维诺 </a>
+				<a href="javascript:;">施巴</a>
+				<a href="javascript:;">加州宝宝</a>
+				<a href="javascript:;">福喜儿</a>
+				<a href="javascript:;">Martek</a>
+				<a href="javascript:;">Lansinoh</a>
+				<a href="javascript:;">帕玛氏</a>
+				<div class="clr"></div>
+			</div>
+		</div>
+	</div>
+	<div class="header-second-class">
+		<div class="second-title">
+			<img src="../imgs/index-img/icon_gbsp.jpg">
+			<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+		</div>
+		<div class="header-third-class">
+			<a href="javascript:;">进口食品</a>
+			<a href="javascript:;">基础保健</a>
+			<a href="javascript:;">功能保健</a>
+			<a class="red" href="javascript:;">利群全球购</a>
+			<a class="red" href="javascript:;">轻松购全球</a>
+		</div>
+		<div class="header-brand">
+			<div class="brand-title"> 品牌 </div>
+			<div class="brand-area">
+				<a href="javascript:;">Nature’s care</a>
+				<a href="javascript:;">佳思敏</a>
+				<a href="javascript:;">Swisse</a>
+				<a href="javascript:;">澳佳宝</a>
+				<a href="javascript:;">Doppelherz</a>
+				<a href="javascript:;">Caudalie</a>
+				<a href="javascript:;">健安喜</a>
+				<a href="javascript:;">Murad</a>
+				<a href="javascript:;">Nature Made`</a>
+				<a href="javascript:;">诺奥</a>
+				<a href="javascript:;">BioAstin</a>
+				<a href="javascript:;">Puritan‘s Pride</a>
+				<a href="javascript:;">安利</a>
+				<a href="javascript:;">自然之宝</a>
+				<a href="javascript:;">山本汉方</a>
+				<a href="javascript:;">Salus Floradix</a>
+				<a href="javascript:;">地球妈妈</a>
+				<a href="javascript:;">metabolic</a>
+				<a href="javascript:;">生酵素222</a>
+				<a href="javascript:;">NAUTICA</a>
+				<a href="javascript:;">FANCL</a>
+				<a href="javascript:;">FUKAMI</a>
+				<a href="javascript:;">graphico</a>
+				<a href="javascript:;">新谷酵素</a>
+				<a href="javascript:;">美溢</a>
+				<a href="javascript:;">德运</a>
+				<a href="javascript:;">格力高</a>
+				<a href="javascript:;">卡乐比</a>
+			</div>
+		</div>
+	</div>
+	<div class="header-second-class">
+		<div class="second-title">
+			<img src="../imgs/index-img/icon_gbmz.jpg">
+			<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+		</div>
+		<div class="header-third-class">
+			<a href="javascript:;">美容工具</a>
+		</div>
+		<div class="header-brand">
+			<div class="brand-title">品牌 </div>
+			<div class="brand-area">
+				<a href="javascript:;">雪花秀</a>
+				<a href="javascript:;">SANA/莎娜</a>
+				<a href="javascript:;">LOSHI/北海道</a>
+				<a href="javascript:;">资生堂</a>
+				<a href="javascript:;">丝蓓绮</a>
+				<a href="javascript:;">兰芝</a>
+				<a href="javascript:;">贝德玛</a>
+				<a href="javascript:;">雅漾</a>
+				<a href="javascript:;">LG</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!------------------------------民生食品--------------------->
+</li>
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-food title">
+		<span>民生食品</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">粮油调味</a>
+		<a href="javascript:;">生鲜</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="header-second-class">
+		<div class="second-title">
+			<img src="../imgs/index-img/icon_oil.jpg">
+			<a href="javascript:;">粮油调味</a>
+			<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+		</div>
+		<div class="header-third-class">
+			<a href="javascript:;">大米</a>
+			<a href="javascript:;">面粉</a>
+			<a href="javascript:;">挂面</a>
+			<a href="javascript:;">杂粮</a>
+			<a href="javascript:;">食用油</a>
+			<a href="javascript:;">橄榄油</a>
+			<a href="javascript:;">南北干货</a>
+			<a href="javascript:;">厨房调味</a>
+			<a href="javascript:;">方便速食</a>
+			<a href="javascript:;">罐头</a>
+		</div>
+		<div class="header-brand">
+			<div class="brand-title">品牌</div>
+			<div class="brand-area">
+				<a href="javascript:;">品品好</a>
+				<a href="javascript:;">维良</a>
+				<a href="javascript:;">鲁花</a>
+				<a href="javascript:;">巧媳妇</a>
+				<a href="javascript:;">味好美</a>
+				<a href="javascript:;">海天</a>
+				<a href="javascript:;">丝宝宝</a>
+				<a href="javascript:;">五谷道场</a>
+				<a href="javascript:;">福临门</a>
+				<a href="javascript:;">长生</a>
+				<a href="javascript:;">唐师傅</a>
+				<a href="javascript:;">百乐麦</a>
+				<a href="javascript:;">欣和</a>
+				<a href="javascript:;">吉香居</a>
+				<a href="javascript:;">长寿花</a>
+				<a href="javascript:;">金龙鱼</a>
+				<a href="javascript:;">信中</a>
+				<a href="javascript:;">哇哈哈</a>
+				<a href="javascript:;">利是</a>
+				<a href="javascript:;">乐芷</a>
+				<a href="javascript:;">卡斯塔多乐</a>
+				<a href="javascript:;">禧福</a>
+				<a href="javascript:;">五星湖</a>
+				<a href="javascript:;">甸禾</a>
+				<a href="javascript:;">瑞食尚</a>
+				<a href="javascript:;">寒地沼泽</a>
+				<a href="javascript:;">贝润云汇</a>
+			</div>
+		</div>
+	</div>
+	<div class="header-second-class">
+		<div class="second-title">
+			<img src="../imgs/index-img/icon_rock.jpg">
+			<a href="javascript:;">地方特产</a>
+			<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+		</div>
+		<div class="header-third-class">
+			<a href="javascript:;">青岛特产</a>
+			<a href="javascript:;">新疆特产</a>
+			<a href="javascript:;">济南特产</a>
+		</div>
+		<div class="header-brand">
+			<div class="brand-title">品牌</div>
+			<div class="brand-area">
+				<a href="javascript:;">鑫复盛</a>
+				<a href="javascript:;">鹏程</a>
+				<a href="javascript:;">鱼专家</a>
+				<a href="javascript:;">圣果源</a>
+				<a href="javascript:;">佛桃</a>
+				<a href="javascript:;">俞记</a>
+				<a href="javascript:;">山前江</a>
+			</div>
+		</div>
+	</div>
+	<div class="header-second-class">
+		<div class="second-title">
+			<img src="../imgs/index-img/icon_fish.jpg">
+			<a href="javascript:;">生鲜食品</a>
+			<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+		</div>
+		<div class="header-third-class">
+			<a href="javascript:;">水果</a>
+			<a href="javascript:;">蔬菜</a>
+			<a href="javascript:;">水产</a>
+			<a href="javascript:;">熟肉/熟食</a>
+			<a href="javascript:;" ../a>
+				<a href="javascript:;">低温奶</a>
+				<a href="javascript:;">低温肠</a>
+				<a href="javascript:;">月饼</a>
+		</div>
+		<div class="header-brand">
+			<div class="brand-title">品牌</div>
+			<div class="brand-area">
+				<a href="javascript:;">琴牌</a>
+				<a href="javascript:;">光明</a>
+				<a href="javascript:;">喜旺</a>
+				<a href="javascript:;">鲁翠</a>
+				<a href="javascript:;">伊势</a>
+				<a href="javascript:;">得益</a>
+				<a href="javascript:;">多美鲜</a>
+				<a href="javascript:;">西北人家</a>
+				<a href="javascript:;">南纬37°</a>
+				<a href="javascript:;">澳洲牛肉</a>
+			</div>
+		</div>
+	</div>
+</div>
+</li>
+<!------------------------零食酒水---------------------- -->
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-drink title">
+		<span>零食酒水</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">休闲零食</a>
+		<a href="javascript:;">饮料</a>
+		<a href="javascript:;">酒</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<!--第一列 -->
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_beer.jpg">
+				<a href="javascript:;">酒</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">白酒</a>
+				<a href="javascript:;">啤酒</a>
+				<a href="javascript:;">黄酒</a>
+				<a href="javascript:;">葡萄酒</a>
+				<a href="javascript:;">洋酒</a>
+				<a href="javascript:;">保健酒</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">茅台</a>
+					<a href="javascript:;">五粮液</a>
+					<a href="javascript:;">金六福</a>
+					<a href="javascript:;">郎酒</a>
+					<a href="javascript:;">琅琊台</a>
+					<a href="javascript:;">泸州</a>
+					<a href="javascript:;">青岛啤酒</a>
+					<a href="javascript:;">红星</a>
+					<a href="javascript:;">张裕</a>
+					<a href="javascript:;">绵竹</a>
+					<a href="javascript:;">即墨老酒</a>
+					<a href="javascript:;">牛栏山</a>
+					<a href="javascript:;">宁夏红</a>
+					<a href="javascript:;">卓维浓</a>
+					<a href="javascript:;">Malina(玛丽)</a>
+					<a href="javascript:;">景芝</a>
+					<a href="javascript:;">如意郎</a>
+					<a href="javascript:;">永定河</a>
+					<a href="javascript:;">女儿红</a>
+					<a href="javascript:;">LACANOSA</a>
+					<a href="javascript:;">新华门</a>
+					<a href="javascript:;">汾酒</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_fruit.jpg">
+				<a href="javascript:;">饮料</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">水</a>
+				<a href="javascript:;">果汁</a>
+				<a href="javascript:;">茶饮料</a>
+				<a href="javascript:;">咖啡</a>
+				<a href="javascript:;">碳酸饮料</a>
+				<a href="javascript:;">功能饮料</a>
+				<a href="javascript:;">奶</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">蒙牛</a>
+					<a href="javascript:;">汇源</a>
+					<a href="javascript:;">统一</a>
+					<a href="javascript:;">红牛</a>
+					<a href="javascript:;">康师傅</a>
+					<a href="javascript:;">崂山</a>
+					<a href="javascript:;">农夫果园</a>
+					<a href="javascript:;">伊利</a>
+					<a href="javascript:;">可口可乐</a>
+					<a href="javascript:;">崂翠矿泉水</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--第二列 -->
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_suger.jpg">
+				<a href="javascript:;">休闲零食</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">饼干糕点</a>
+				<a href="javascript:;">糖果</a>
+				<a href="javascript:;">巧克力</a>
+				<a href="javascript:;">果冻</a>
+				<a href="javascript:;">坚果</a>
+				<a href="javascript:;">肉脯肉干</a>
+				<a href="javascript:;">膨化</a>
+				<a href="javascript:;">小食</a>
+				<a href="javascript:;">枣</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">好丽友</a>
+					<a href="javascript:;">德芙</a>
+					<a href="javascript:;">益达</a>
+					<a href="javascript:;">上好佳</a>
+					<a href="javascript:;">乐事</a>
+					<a href="javascript:;">米老头</a>
+					<a href="javascript:;">阿尔卑斯</a>
+					<a href="javascript:;">达利</a>
+					<a href="javascript:;">喜之郎</a>
+					<a href="javascript:;">企强</a>
+					<a href="javascript:;">品品人生</a>
+					<a href="javascript:;">卡夫</a>
+					<a href="javascript:;">贝脆思</a>
+					<a href="javascript:;">老三东</a>
+					<a href="javascript:;">青松客</a>
+					<a href="javascript:;">鲜引力</a>
+					<a href="javascript:;">RIO</a>
+					<a href="javascript:;">清嘴</a>
+					<a href="javascript:;">渔米之湘</a>
+					<a href="javascript:;">妙克力</a>
+					<a href="javascript:;">眼睛渴了</a>
+					<a href="javascript:;">思味特</a>
+					<a href="javascript:;">京都念慈</a>
+					<a href="javascript:;">百草味</a>
+					<a href="javascript:;">唐师傅</a>
+					<a href="javascript:;">母亲</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_milk.jpg">
+				<a href="javascript:;">冲饮</a>
+				<a href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">麦片</a>
+				<a href="javascript:;">奶粉</a>
+				<a href="javascript:;">糊粉</a>
+				<a href="javascript:;">咖啡粉</a>
+				<a href="javascript:;">果粉</a>
+				<a href="javascript:;">茶</a>
+				<a href="javascript:;">奶茶</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">崂乡</a>
+					<a href="javascript:;">雀巢</a>
+					<a href="javascript:;">立顿</a>
+					<a href="javascript:;">南方</a>
+					<a href="javascript:;">忆江南</a>
+					<a href="javascript:;">永和</a>
+					<a href="javascript:;">西麦</a>
+					<a href="javascript:;">知福</a>
+					<a href="javascript:;">固本堂</a>
+					<a href="javascript:;">御青</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 	第三列 -->
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_medicine.jpg">
+				<a href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">传统滋补</a>
+				<a href="javascript:;">调养保健</a>
+				<a href="javascript:;">蜂蜜</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">固本堂</a>
+					<a href="javascript:;">倍润云汇</a>
+					<a href="javascript:;">东阿</a>
+					<a href="javascript:;">王凯</a>
+					<a href="javascript:;">嗡嗡乐</a>
+					<a href="javascript:;">百花</a>
+					<a href="javascript:;">蒂芬妮</a>
+					<a href="javascript:;">一生安康</a>
+					<a href="javascript:;">东阿人家</a>
+					<a href="javascript:;">五星湖</a>
+					<a href="javascript:;">新广源</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</li>
+<!-- 美妆洗护 -->
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-clean title">
+		<span>美妆洗护</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">洗护</a>
+		<a href="javascript:;">面部护理</a>
+		<a href="javascript:;">彩妆</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_tooth.jpg">
+				<a href="javascript:;">个人洗护</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">洗发</a>
+				<a href="javascript:;">护发</a>
+				<a href="javascript:;">洗护套装</a>
+				<a href="javascript:;">染发烫发</a>
+				<a href="javascript:;">头发造型</a>
+				<a href="javascript:;">沐浴露</a>
+				<a href="javascript:;">香皂</a>
+				<a href="javascript:;">洗手液</a>
+				<a href="javascript:;">牙膏/牙粉</a>
+				<a href="javascript:;">牙刷/牙线</a>
+				<a href="javascript:;">漱口水</a>
+				<a href="javascript:;">卫生巾</a>
+				<a href="javascript:;">洗液</a>
+				<a href="javascript:;">护垫</a>
+				<a href="javascript:;">润肤露</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">欧莱雅</a>
+					<a href="javascript:;">ABC</a>
+					<a href="javascript:;">海飞丝</a>
+					<a href="javascript:;">潘婷</a>
+					<a href="javascript:;">佳洁士</a>
+					<a href="javascript:;">沙宣</a>
+					<a href="javascript:;">苏菲</a>
+					<a href="javascript:;">云南白药</a>
+					<a href="javascript:;">护舒宝</a>
+					<a href="javascript:;">狮王</a>
+					<a href="javascript:;">多芬</a>
+					<a href="javascript:;">LG</a>
+					<a href="javascript:;">舒肤佳</a>
+					<a href="javascript:;">温雅</a>
+					<a href="javascript:;">力士</a>
+					<a href="javascript:;">中华</a>
+					<a href="javascript:;">美涛</a>
+					<a href="javascript:;">资生堂</a>
+					<a href="javascript:;">施华蔻</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_beauty.jpg">
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">止汗</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">隆力奇</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_brush.jpg">
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">美容工具</a>
+				<a href="javascript:;">化妆刷</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">瑞柏嘉</a>
+					<a href="javascript:;">三本</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_face.jpg">
+				<a href="javascript:;">面部护理</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">乳液/面霜</a>
+				<a href="javascript:;">化妆水</a>
+				<a href="javascript:;">面部精华</a>
+				<a href="javascript:;">眼部护理</a>
+				<a href="javascript:;">洁面</a>
+				<a href="javascript:;">面膜</a>
+				<a href="javascript:;">面部护理套装</a>
+				<a href="javascript:;">面部去角质</a>
+				<a href="javascript:;">敏感修护</a>
+				<a href="javascript:;">防晒</a>
+				<div class="clear"></div>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">海蓝之谜</a>
+					<a href="javascript:;">雅诗兰黛</a>
+					<a href="javascript:;">倩碧</a>
+					<a href="javascript:;">兰蔻</a>
+					<a href="javascript:;">迪奥</a>
+					<a href="javascript:;">欧莱雅</a>
+					<a href="javascript:;">玉兰油</a>
+					<a href="javascript:;">梦妆</a>
+					<a href="javascript:;">羽西</a>
+					<a href="javascript:;">佰草集</a>
+					<a href="javascript:;">薇姿</a>
+					<a href="javascript:;">理肤泉</a>
+					<a href="javascript:;">碧欧泉</a>
+					<a href="javascript:;">资生堂</a>
+					<a href="javascript:;">芙丽芳丝</a>
+					<a href="javascript:;">温碧泉</a>
+					<a href="javascript:;">百雀羚</a>
+					<a href="javascript:;">相宜本草</a>
+					<a href="javascript:;">Za</a>
+					<a href="javascript:;">昭贵</a>
+					<a href="javascript:;">本草訫语</a>
+					<a href="javascript:;">麦帝丝</a>
+					<a href="javascript:;">海洋丽姿</a>
+					<a href="javascript:;">NURY芦丽</a>
+					<a href="javascript:;">韩束</a>
+					<a href="javascript:;">欧珀莱</a>
+					<a href="javascript:;">兰芝</a>
+					<a href="javascript:;">高丝</a>
+					<a href="javascript:;">美即</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_man.jpg">
+				<a href="javascript:;">男士护肤</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">洁面</a>
+				<a href="javascript:;">爽肤水/须后水</a>
+				<a href="javascript:;">乳液/面霜</a>
+				<a href="javascript:;">剃须护理</a>
+				<a href="javascript:;">面部精华</a>
+				<a href="javascript:;">眼霜</a>
+				<a href="javascript:;">护肤套装</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">欧莱雅男士</a>
+					<a href="javascript:;">碧欧泉</a>
+					<a href="javascript:;">高夫</a>
+					<a href="javascript:;">妮维雅</a>
+					<a href="javascript:;">曼秀雷敦</a>
+					<a href="javascript:;">吉列</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_perfume.jpg">
+				<a href="javascript:;">香氛精油</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">女士香水</a>
+				<a href="javascript:;">男士香水</a>
+				<a href="javascript:;">单方精油</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title"> 品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">迪奥</a>
+					<a href="javascript:;">Prada/普拉达</a>
+					<a href="javascript:;">Versace/范思哲</a>
+					<a href="javascript:;">Burberry/巴宝莉</a>
+					<a href="javascript:;">GUCCI/古驰</a>
+					<a href="javascript:;">BOSS</a>
+					<a href="javascript:;">Lanvin/浪凡</a>
+					<a href="javascript:;">Anna sui</a>
+					<a href="javascript:;">Valentino/华伦天奴</a>
+					<a href="javascript:;">Montblanc/万宝龙</a>
+					<a href="javascript:;">阿迪达斯</a>
+					<a href="javascript:;">贝丽丝</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_woman.jpg">
+				<a href="javascript:;">时尚彩妆</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">BB霜</a>
+				<a href="javascript:;">隔离霜</a>
+				<a href="javascript:;">卸妆</a>
+				<a href="javascript:;">粉底液/粉底霜</a>
+				<a href="javascript:;">粉饼</a>
+				<a href="javascript:;">散粉/蜜粉</a>
+				<a href="javascript:;">遮瑕</a>
+				<a href="javascript:;">../唇蜜</a>
+				<a href="javascript:;">眉笔/眉粉</a>
+				<a href="javascript:;">眼线笔/眼线膏</a>
+				<a href="javascript:;">睫毛膏</a>
+				<a href="javascript:;">眼影</a>
+				<a href="javascript:;">腮红</a>
+				<a href="javascript:;">美甲</a>
+
+			</div>
+			<div class="header-brand">
+				<div class="brand-title"> 品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">欧莱雅彩妆</a>
+					<a href="javascript:;">雅诗兰黛</a>
+					<a href="javascript:;">兰蔻</a>
+					<a href="javascript:;">谜尚</a>
+					<a href="javascript:;">美宝莲</a>
+					<a href="javascript:;">ZA</a>
+					<a href="javascript:;">曼秀雷敦</a>
+					<a href="javascript:;">兰芝</a>
+					<a href="javascript:;">欧珀莱</a>
+					<a href="javascript:;">自然堂</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</li>
+<!---日用百货 -->
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-day title">
+		<span>日用百货</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">生活用纸</a>
+		<a href="javascript:;">清洁</a>
+		<a href="javascript:;">居家</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_wash.jpg">
+				<a href="javascript:;">清洁日用</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">洗衣液</a>
+				<a href="javascript:;">洗衣粉</a>
+				<a href="javascript:;">洗衣皂</a>
+				<a href="javascript:;">消毒液</a>
+				<a href="javascript:;">洁厕</a>
+				<a href="javascript:;">空气清新/吸湿防蛀</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">蓝月亮</a>
+					<a href="javascript:;">碧浪</a>
+					<a href="javascript:;">汰渍</a>
+					<a href="javascript:;">滴露</a>
+					<a href="javascript:;">立白</a>
+					<a href="javascript:;">奥妙</a>
+					<a href="javascript:;">金纺</a>
+					<a href="javascript:;">超能</a>
+					<a href="javascript:;">雕牌</a>
+					<a href="javascript:;">得其利是</a>
+					<a href="javascript:;">青松日化</a>
+					<a href="javascript:;">威洁士</a>
+					<a href="javascript:;">美贰玖</a>
+					<a href="javascript:;">威猛</a>
+					<a href="javascript:;">康威龙</a>
+					<a href="javascript:;">孺子牛</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_pan.jpg">
+				<a href="javascript:;">厨房餐饮</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">水具</a>
+				<a href="javascript:;">烹饪锅具</a>
+				<a href="javascript:;">厨房小工具</a>
+				<a href="javascript:;">保鲜用品</a>
+				<a href="javascript:;">厨房清洁</a>
+				<a href="javascript:;">刀具菜板</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">哈尔斯</a>
+					<a href="javascript:;">爱仕达</a>
+					<a href="javascript:;">苏泊尔</a>
+					<a href="javascript:;">兴财</a>
+					<a href="javascript:;">天竹</a>
+					<a href="javascript:;">双枪</a>
+					<a href="javascript:;">立白</a>
+					<a href="javascript:;">蓝月亮</a>
+					<a href="javascript:;">威猛</a>
+					<a href="javascript:;">雕牌</a>
+					<a href="javascript:;">白猫</a>
+					<a href="javascript:;">妙洁</a>
+					<a href="javascript:;">思高</a>
+					<a href="javascript:;">紫丁香</a>
+					<a href="javascript:;">茶花</a>
+					<a href="javascript:;">云蕾</a>
+					<a href="javascript:;">巧媳妇</a>
+					<a href="javascript:;">幸福妈咪</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_paper.jpg">
+				<a href="javascript:;">生活用纸</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">卷纸</a>
+				<a href="javascript:;">抽纸</a>
+				<a href="javascript:;">厨房用纸</a>
+				<a href="javascript:;">湿巾纸</a>
+				<a href="javascript:;">手帕纸</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">维达</a>
+					<a href="javascript:;">清风</a>
+					<a href="javascript:;">心相印</a>
+					<a href="javascript:;">A&amp;S</a>
+					<a href="javascript:;">小宝贝</a>
+					<a href="javascript:;">泉林本色</a>
+					<a href="javascript:;">益居</a>
+					<a href="javascript:;">幸福阳光 </a>
+					<a href="javascript:;">ABC</a>
+					<a href="javascript:;">玉牌</a>
+					<a href="javascript:;">舒洁</a>
+					<a href="javascript:;">珍爱</a>
+					<a href="javascript:;">依依天使</a>
+					<a href="javascript:;">正利</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_spin.jpg">
+				<a href="javascript:;">精品家纺</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">床品套件</a>
+				<a href="javascript:;">被/毛毯</a>
+				<a href="javascript:;">毛巾浴巾</a>
+				<a href="javascript:;">婴童家纺</a>
+				<a href="javascript:;">枕头/枕套</a>
+				<a href="javascript:;">靠垫</a>
+				<a href="javascript:;">窗帘</a>
+				<a href="javascript:;">餐桌布艺</a>
+				<a href="javascript:;">凉席</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">孚日洁玉</a>
+					<a href="javascript:;">洁丽雅</a>
+					<a href="javascript:;">赤金</a>
+					<a href="javascript:;">永亮</a>
+					<a href="javascript:;">华堂锦裳</a>
+					<a href="javascript:;">竹之锦</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_ball.jpg">
+				<a href="javascript:;">运动保健</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">计生用品</a>
+				<a href="javascript:;">棋牌麻将</a>
+				<a href="javascript:;">球类运动</a>
+				<a href="javascript:;">户外野营</a>
+				<a href="javascript:;">健康秤/厨房秤</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">杜蕾斯</a>
+					<a href="javascript:;">百利达</a>
+					<a href="javascript:;">斯伯丁</a>
+					<a href="javascript:;">强力</a>
+					<a href="javascript:;">火车头</a>
+					<a href="javascript:;">东信</a>
+					<a href="javascript:;">尚烤佳</a>
+					<a href="javascript:;">大富翁</a>
+					<a href="javascript:;">金利来</a>
+					<a href="javascript:;">三A</a>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_tub.jpg">
+				<a href="javascript:;">居家日用</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">家居清洁护理</a>
+				<a href="javascript:;">拖把/扫把</a>
+				<a href="javascript:;">收纳/衣架</a>
+				<a href="javascript:;">雨具</a>
+				<a href="javascript:;">驱蚊用品</a>
+				<a href="javascript:;">水桶/脸盆</a>
+				<a href="javascript:;">浴室用品</a>
+				<a href="javascript:;">垃圾桶</a>
+				<a href="javascript:;">拖鞋</a>
+				<a href="javascript:;">一次性用品</a>
+				<a href="javascript:;">其它日用</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">茶花</a>
+					<a href="javascript:;">妙洁</a>
+					<a href="javascript:;">云蕾</a>
+					<a href="javascript:;">克林莱</a>
+					<a href="javascript:;">龙士达</a>
+					<a href="javascript:;">好友</a>
+					<a href="javascript:;">南孚</a>
+					<a href="javascript:;">超霸</a>
+					<a href="javascript:;">双鹿</a>
+					<a href="javascript:;">大达</a>
+					<a href="javascript:;">天堂</a>
+					<a href="javascript:;">宏达</a>
+					<a href="javascript:;">红鸟</a>
+					<a href="javascript:;">雪豹</a>
+					<a href="javascript:;">奇伟</a>
+					<a href="javascript:;">碧丽珠</a>
+					<a href="javascript:;">户清</a>
+					<a href="javascript:;">吉康</a>
+					<a href="javascript:;">蓝万</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_car.jpg">
+				<a href="javascript:;">汽车用品</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">汽车电子</a>
+				<a href="javascript:;">汽车养护</a>
+				<a href="javascript:;">汽车内饰</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">领驾</a>
+					<a href="javascript:;">车仆</a>
+					<a href="javascript:;">誉道</a>
+					<a href="javascript:;">范罗士</a>
+					<a href="javascript:;">虎贝贝</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</li>
+<!--母婴玩具  -->
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-toy title">
+		<span>母婴玩具</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">奶粉</a>
+		<a href="javascript:;">尿裤</a>
+		<a href="javascript:;">洗护</a>
+		<a href="javascript:;">喂养</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_naifen.jpg">
+				<a href="javascript:;">婴儿奶粉</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">1段奶粉 </a>
+				<a href="javascript:;">2段奶粉</a>
+				<a href="javascript:;">3段奶粉</a>
+				<a href="javascript:;">4段奶粉</a>
+				<a href="javascript:;">5段奶粉</a>
+				<a href="javascript:;">特殊配方奶粉</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title"> 品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">爱他美</a>
+					<a href="javascript:;">诺优能</a>
+					<a href="javascript:;">美赞臣</a>
+					<a href="javascript:;">惠氏</a>
+					<a href="javascript:;">雅培</a>
+					<a href="javascript:;">多美滋</a>
+					<a href="javascript:;">雀巢</a>
+					<a href="javascript:;">Nutrilon</a>
+					<a href="javascript:;">美素佳儿</a>
+					<a href="javascript:;">Friso</a>
+					<a href="javascript:;">伊利</a>
+					<a href="javascript:;">合生元</a>
+					<a href="javascript:;">飞鹤</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_xihu.jpg">
+				<a href="javascript:;">洗护用品</a>
+				<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">宝宝护肤</a>
+				<a href="javascript:;">洗发/沐浴 </a>
+				<a href="javascript:;">洗浴用品</a>
+				<a href="javascript:;">洗衣液/皂 </a>
+				<a href="javascript:;">日常护理</a>
+				<a href="javascript:;">座便器</a>
+				<a href="javascript:;">理发器</a>
+				<a href="javascript:;">牙膏/牙刷</a>
+				<a href="javascript:;">礼盒套装</a>
+				<div class="clear"></div>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">嗳呵</a>
+					<a href="javascript:;">贝亲</a>
+					<a href="javascript:;">强生</a>
+					<a href="javascript:;">保宁</a>
+					<a href="javascript:;">OKBABY</a>
+					<a href="javascript:;">爱得利</a>
+					<a href="javascript:;">好孩子</a>
+					<a href="javascript:;">小浣熊</a>
+					<a href="javascript:;">婴唯爱</a>
+					<a href="javascript:;">青松日化</a>
+					<a href="javascript:;">SNOOPY</a>
+					<a href="javascript:;">乐比</a>
+					<a href="javascript:;">哈罗闪</a>
+					<a href="javascript:;">宝贝时代</a>
+					<a href="javascript:;">泡飘乐</a>
+					<a href="javascript:;">汉高</a>
+					<a href="javascript:;">六神</a>
+					<a href="javascript:;">婴之侣</a>
+					<a href="javascript:;">法贝儿</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_yizi.jpg">
+				<a href="javascript:;">车床寝具</a>
+				<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">手推车</a>
+				<a href="javascript:;">学步车</a>
+				<a href="javascript:;">三轮车</a>
+				<a href="javascript:;">自行车</a>
+				<a href="javascript:;">电动车</a>
+				<a href="javascript:;">餐椅/摇椅</a>
+				<a href="javascript:;">婴童床</a>
+				<a href="javascript:;">扭扭车/滑板车</a>
+				<a href="javascript:;">汽车安全座椅</a>
+				<a href="javascript:;">家居床品</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">好孩子</a>
+					<a href="javascript:;">小龙哈彼</a>
+					<a href="javascript:;">百代适</a>
+					<a href="javascript:;">麦车车</a>
+					<a href="javascript:;">迪士尼</a>
+					<a href="javascript:;">祺娃娃</a>
+					<a href="javascript:;">世纪宝贝</a>
+					<a href="javascript:;">淘嘟嘟</a>
+					<a href="javascript:;">瑞姆</a>
+					<a href="javascript:;">瑞凯威</a>
+					<a href="javascript:;">路途乐</a>
+					<a href="javascript:;">STM</a>
+					<a href="javascript:;">贝贝卡西</a>
+					<a href="javascript:;">aden anais</a>
+					<a href="javascript:;">aikaya</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_naiping.jpg">
+				<a href="javascript:;">喂养用品</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">辅食料理机</a>
+				<a href="javascript:;">暖奶消毒</a>
+				<a href="javascript:;">喂哺清洁</a>
+				<a href="javascript:;">辅助配件</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">贝亲</a>
+					<a href="javascript:;">婴之侣</a>
+					<a href="javascript:;">NUK</a>
+					<a href="javascript:;">新安怡</a>
+					<a href="javascript:;">bobo</a>
+					<a href="javascript:;">美德乐</a>
+					<a href="javascript:;">爱得利</a>
+					<a href="javascript:;">好孩子</a>
+					<a href="javascript:;">虎牌</a>
+					<a href="javascript:;">膳魔师</a>
+					<a href="javascript:;">啾啾</a>
+					<a href="javascript:;">香蕉宝宝</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_mother.jpg">
+				<a href="javascript:;">妈妈专区</a>
+				<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">孕期营养</a>
+				<a href="javascript:;">孕期内衣</a>
+				<a href="javascript:;">孕妈洗护</a>
+				<a href="javascript:;">母乳喂养</a>
+				<a href="javascript:;">孕产用品</a>
+				<a href="javascript:;">产后塑身</a>
+				<a href="javascript:;">妈咪包/背婴带</a>
+				<a href="javascript:;">防辐射服</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">柳燕</a>
+					<a href="javascript:;">贝亲</a>
+					<a href="javascript:;">六甲村</a>
+					<a href="javascript:;">惠氏</a>
+					<a href="javascript:;">婧麒</a>
+					<a href="javascript:;">美德乐</a>
+					<a href="javascript:;">喜佳福</a>
+					<a href="javascript:;">新安怡</a>
+					<a href="javascript:;">十月天使</a>
+					<a href="javascript:;">嗳呵</a>
+					<a href="javascript:;">三美婴</a>
+					<a href="javascript:;">抱抱熊</a>
+					<a href="javascript:;">好孩子</a>
+					<a href="javascript:;">乐比</a>
+					<a href="javascript:;">三洋</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_xie.jpg">
+				<a href="javascript:;">童装童鞋</a>
+				<a class="red fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">上衣</a>
+				<a href="javascript:;">套装</a>
+				<a href="javascript:;">裤子</a>
+				<a href="javascript:;">婴../a>
+
+<a href="javascript:;">儿童配饰</a>
+				<a href="javascript:;">针织衫</a>
+				<a href="javascript:;">外套</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">芭比</a>
+					<a href="javascript:;">hiheart</a>
+					<a href="javascript:;">Banana pocket</a>
+					<a href="javascript:;">妙菲登</a>
+					<a href="javascript:;">懒狗</a>
+					<a href="javascript:;">阿玛莎</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_yingyang.jpg">
+				<a href="javascript:;">营养辅食</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">米粉/菜粉</a>
+				<a href="javascript:;">果泥/果汁</a>
+				<a href="javascript:;">宝宝零食</a>
+				<a href="javascript:;">营../a>
+
+<a href="javascript:;">清火/开胃</a>
+				<a href="javascript:;">益生菌/初乳</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">亨氏</a>
+					<a href="javascript:;">百乐麦</a>
+					<a href="javascript:;">雀巢</a>
+					<a href="javascript:;">贝因美</a>
+					<a href="javascript:;">特福芬</a>
+					<a href="javascript:;">每伴</a>
+					<a href="javascript:;">青食</a>
+					<a href="javascript:;">康贝多维</a>
+					<a href="javascript:;">合生元</a>
+					<a href="javascript:;">飞鹤</a>
+					<a href="javascript:;">宝乐友</a>
+					<a href="javascript:;">麦丽莎</a>
+					<a href="javascript:;">小铁人</a>
+					<a href="javascript:;">喜宝</a>
+					<a href="javascript:;">嘉宝</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_niaobu.jpg">
+				<a href="javascript:;">尿裤湿巾</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">纸尿裤</a>
+				<a href="javascript:;">纸尿片</a>
+				<a href="javascript:;">拉拉裤</a>
+				<a href="javascript:;">婴儿湿巾</a>
+				<a href="javascript:;">防尿垫巾/尿布</a>
+				<a href="javascript:;">成人尿裤</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">花王</a>
+					<a href="javascript:;">帮宝适</a>
+					<a href="javascript:;">好奇</a>
+					<a href="javascript:;">妈咪宝贝</a>
+					<a href="javascript:;">菲比</a>
+					<a href="javascript:;">康洁</a>
+					<a href="javascript:;">尤妮佳</a>
+					<a href="javascript:;">正利</a>
+					<a href="javascript:;">喜佳福</a>
+					<a href="javascript:;">班博</a>
+					<a href="javascript:;">爱婴天使</a>
+					<a href="javascript:;">大王</a>
+					<a href="javascript:;">爱心妈妈</a>
+					<a href="javascript:;">嘟嘟安</a>
+					<a href="javascript:;">强生</a>
+					<a href="javascript:;">好孩子</a>
+					<a href="javascript:;">妙儿舒</a>
+					<a href="javascript:;">Q&amp;8</a>
+					<a href="javascript:;">蒂乐</a>
+					<a href="javascript:;">安儿乐</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_wanju.jpg">
+				<a href="javascript:;">儿童玩具</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">床铃/摇铃</a>
+				<a href="javascript:;">益智玩具</a>
+				<a href="javascript:;">音乐玩具</a>
+				<a href="javascript:;">健身玩具</a>
+				<a href="javascript:;">情景玩具</a>
+				<a href="javascript:;">DIY玩具</a>
+				<a href="javascript:;">积木拼插</a>
+				<a href="javascript:;">遥控/模型</a>
+				<a href="javascript:;">电子琴</a>
+				<a href="javascript:;">爬../a>
+
+<a href="javascript:;">早教学习</a>
+				<a href="javascript:;">戏水/玩沙</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">奥迪</a>
+					<a href="javascript:;">澳贝</a>
+					<a href="javascript:;">汇乐</a>
+					<a href="javascript:;">风火轮</a>
+					<a href="javascript:;">乐高</a>
+					<a href="javascript:;">智高</a>
+					<a href="javascript:;">Barbie</a>
+					<a href="javascript:;">壹百分</a>
+					<a href="javascript:;">费雪</a>
+					<a href="javascript:;">双鹰</a>
+					<a href="javascript:;">聪乐美</a>
+					<a href="javascript:;">美致</a>
+					<a href="javascript:;">B.</a>
+					<a href="javascript:;">木马</a>
+					<a href="javascript:;">萌宝宝</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</li>
+<!-----------------------------------手机数码----------------------->
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-mobile title">
+		<span>手机数码</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">手机</a>
+		<a href="javascript:;">电脑</a>
+		<a href="javascript:;">相机</a>
+		<a href="javascript:;">办公</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_shouji.jpg">
+				<a href="javascript:;">手机</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">手机</a>
+				<a href="javascript:;">安卓（Android）</a>
+				<a href="javascript:;">苹果（IOS）</a>
+				<a href="javascript:;">移动3G</a>
+				<a href="javascript:;">电信4G</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">iPhone</a>
+					<a href="javascript:;">三星</a>
+					<a href="javascript:;">华为</a>
+					<a href="javascript:;">小米</a>
+					<a href="javascript:;">oppo</a>
+					<a href="javascript:;">魅族</a>
+					<a href="javascript:;">诺基亚</a>
+					<a href="javascript:;">中兴</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_diannao.jpg">
+				<a href="javascript:;">电脑</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">台式机</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">苹果</a>
+					<a href="javascript:;">DELL</a>
+					<a href="javascript:;">联想</a>
+					<a href="javascript:;">三星</a>
+					<a href="javascript:;">惠普</a>
+					<a href="javascript:;">华硕</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_xiangji.jpg">
+				<a href="javascript:;">数码相机</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">单反相机</a>
+				<a href="javascript:;">微单相机</a>
+				<a href="javascript:;">便携相机</a>
+				<a href="javascript:;">摄像机</a>
+				<a href="javascript:;">单反镜头</a>
+				<a href="javascript:;">拍立得</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">佳能</a>
+					<a href="javascript:;">尼康</a>
+					<a href="javascript:;"> 富士</a>
+					<a href="javascript:;">索尼</a>
+					<a href="javascript:;">卡西欧</a>
+					<a href="javascript:;">JVC</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_bangong.jpg">
+				<a href="javascript:;">办公设备</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">办公用品</a>
+				<a href="javascript:;">笔类</a>
+				<a href="javascript:;">学生用品</a>
+				<a href="javascript:;">打印机</a>
+				<a href="javascript:;">多功能一体机</a>
+				<a href="javascript:;">电话</a>
+				<a href="javascript:;">传真机</a>
+				<a href="javascript:;">点钞机</a>
+				<a href="javascript:;">碎纸机</a>
+				<a href="javascript:;">点读机</a>
+				<a href="javascript:;">家教机</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">得力</a>
+					<a href="javascript:;">晨光</a>
+					<a href="javascript:;">爱好</a>
+					<a href="javascript:;">马培德</a>
+					<a href="javascript:;">派克</a>
+					<a href="javascript:;">白雪</a>
+					<a href="javascript:;">中华</a>
+					<a href="javascript:;">凯萨</a>
+					<a href="javascript:;">英雄笔</a>
+					<a href="javascript:;">哈弗大学</a>
+					<a href="javascript:;">奥林丹</a>
+					<a href="javascript:;">旗舰</a>
+					<a href="javascript:;">步步高</a>
+					<a href="javascript:;">佳能</a>
+					<a href="javascript:;">范罗士</a>
+					<a href="javascript:;">联想</a>
+					<a href="javascript:;">惠普</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_peijian.jpg">
+				<a href="javascript:;">配件</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">手机配件</a>
+				<a href="javascript:;">相机配件</a>
+				<a href="javascript:;">电脑配件</a>
+				<a href="javascript:;">电玩</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">三星</a>
+					<a href="javascript:;">品胜</a>
+					<a href="javascript:;">联想</a>
+					<a href="javascript:;">罗技</a>
+					<a href="javascript:;">海威特</a>
+					<a href="javascript:;">小米</a>
+					<a href="javascript:;">亚马逊</a>
+					<a href="javascript:;">SanDisk</a>
+					<a href="javascript:;">D-link</a>
+					<a href="javascript:;">酷奇</a>
+					<a href="javascript:;">金士顿</a>
+					<a href="javascript:;">范罗士</a>
+					<a href="javascript:;">沃品</a>
+					<a href="javascript:;">杰诺尔</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_zhineng.jpg">
+				<a href="javascript:;">智能设备</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">智能手表</a>
+				<a href="javascript:;">智能手环</a>
+				<a href="javascript:;">智能居家</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌 </div>
+				<div class="brand-area">
+					<a href="javascript:;">iWatch</a>
+					<a href="javascript:;">华为</a>
+					<a href="javascript:;">乐心</a>
+					<a href="javascript:;">cling</a>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+</li>
+<!-----------------------------------家用电器---------------------->
+<li class="header-first-class">
+<div class="class-title">
+	<div class="class-tv title">
+		<span>家用电器</span>
+		<span class="fr">&gt;</span>
+	</div>
+	<div class="title-pop">
+		<a href="javascript:;">大家电</a>
+		<a href="javascript:;">小家电</a>
+		<a href="javascript:;">热水器</a>
+	</div>
+</div>
+<div class="header-class-pop">
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_jiadian.jpg">
+				<a href="javascript:;">大家电</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">电视</a>
+				<a href="javascript:;">空调</a>
+				<a href="javascript:;">冰箱</a>
+				<a href="javascript:;">洗衣机</a>
+				<a href="javascript:;">酒柜/冷柜</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">海信</a>
+					<a href="javascript:;">海尔</a>
+					<a href="javascript:;">三星</a>
+					<a href="javascript:;">格力</a>
+					<a href="javascript:;">美的</a>
+					<a href="javascript:;">澳柯玛</a>
+					<a href="javascript:;">三菱</a>
+					<a href="javascript:;">夏普</a>
+					<a href="javascript:;">西门子</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_shenghuo.jpg">
+				<a href="javascript:;">生活电器</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">空调扇</a>
+				<a href="javascript:;">电风扇</a>
+				<a href="javascript:;">除湿机</a>
+				<a href="javascript:;">净化器</a>
+				<a href="javascript:;">加湿器</a>
+				<a href="javascript:;">取暖器</a>
+				<a href="javascript:;">电熨斗</a>
+				<a href="javascript:;">挂烫机</a>
+				<a href="javascript:;">净水设备</a>
+				<a href="javascript:;">饮水机</a>
+				<a href="javascript:;">吸尘器</a>
+				<a href="javascript:;">电暖宝</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">美的</a>
+					<a href="javascript:;">飞利浦</a>
+					<a href="javascript:;">亚都</a>
+					<a href="javascript:;">联创</a>
+					<a href="javascript:;">艾美特</a>
+					<a href="javascript:;">澳柯玛</a>
+					<a href="javascript:;">康福尔</a>
+					<a href="javascript:;">先锋电器</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_chufang.jpg">
+				<a href="javascript:;">厨房卫浴</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">热水器</a>
+				<a href="javascript:;">烟灶套餐</a>
+				<a href="javascript:;">油烟机</a>
+				<a href="javascript:;">燃气灶</a>
+				<a href="javascript:;">消毒柜/洗碗机</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">海尔</a>
+					<a href="javascript:;">澳柯玛</a>
+					<a href="javascript:;">万家乐</a>
+					<a href="javascript:;">美的</a>
+					<a href="javascript:;">樱花</a>
+					<a href="javascript:;">西门子</a>
+					<a href="javascript:;">方太</a>
+					<a href="javascript:;">老板</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_dianqi.jpg">
+				<a href="javascript:;">厨房电器</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">豆浆机</a>
+				<a href="javascript:;">微波炉</a>
+				<a href="javascript:;">电压力锅</a>
+				<a href="javascript:;">电饭煲</a>
+				<a href="javascript:;">榨汁机</a>
+				<a href="javascript:;">电烤箱</a>
+				<a href="javascript:;">电饼铛</a>
+				<a href="javascript:;">电磁炉</a>
+				<a href="javascript:;">面包机/多士炉</a>
+				<a href="javascript:;">电水壶</a>
+				<a href="javascript:;">煮蛋器/酸奶机</a>
+				<a href="javascript:;">其他厨房电器</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">九阳</a>
+					<a href="javascript:;">美的</a>
+					<a href="javascript:;">苏泊尔</a>
+					<a href="javascript:;">飞利浦</a>
+					<a href="javascript:;">格兰仕</a>
+					<a href="javascript:;">奔腾</a>
+					<a href="javascript:;">惠人</a>
+					<a href="javascript:;">象印</a>
+					<a href="javascript:;">格来德</a>
+					<a href="javascript:;">利仁</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_jiankang.jpg">
+				<a href="javascript:;">健康护理</a>
+				<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">剃须刀</a>
+				<a href="javascript:;">电吹风</a>
+				<a href="javascript:;">理发器</a>
+				<a href="javascript:;">美容美发器</a>
+				<a href="javascript:;">电动牙刷</a>
+				<a href="javascript:;">剃/脱毛器</a>
+				<a href="javascript:;">洁身器</a>
+				<a href="javascript:;">其他健康电器</a>
+				<a href="javascript:;">按摩器</a>
+				<a href="javascript:;">足浴盆</a>
+			</div>
+			<div class="header-brand">
+				<div class="brand-title">品牌</div>
+				<div class="brand-area">
+					<a href="javascript:;">奔腾 </a>
+					<a href="javascript:;">飞科</a>
+					<a href="javascript:;">超人</a>
+					<a href="javascript:;">松下</a>
+					<a href="javascript:;">飞利浦</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-second-class">
+			<div class="second-title">
+				<img src="../imgs/index-img/icon_wujin.jpg">
+				<a href="javascript:;">五金电器</a>
+				<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+			</div>
+			<div class="header-third-class">
+				<a href="javascript:;">插排插座</a>
+				<a href="javascript:;">家用灯具</a>
+				<a href="javascript:;">电气开关</a>
+				<a href="javascript:;">灭../a>
+
+</div>
+
+<div class="header-brand">
+
+<div class="brand-title"> 品牌</div>
+
+<div class="brand-area">
+
+<a href="javascript:;">公牛</a>
+				<a href="javascript:;">久量</a>
+				<a href="javascript:;">美美</a>
+				<a href="javascript:;">永通</a>
+				<a href="javascript:;">冠雅</a>
+				<a href="javascript:;">孩视宝</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</li>
+<!------------------------------------虚拟服务--------------------->
+<li class="header-first-class">
+<div class="class-title">
+<div class="class-virtual title">
+<span>虚拟服务</span>
+<span class="fr">&gt;</span>
+</div>
+<div class="title-pop">
+<a href="javascript:;">便民缴费</a>
+<a href="javascript:;">旅游</a>
+<a href="javascript:;">图书</a>
+</div>
+</div>
+<div class="header-class-pop">
+<div class="column">
+<div class="header-second-class">
+	<div class="second-title">
+		<img src="../imgs/index-img/icon_tower.jpg">
+		<a href="javascript:;">旅游</a>
+		<a class="fr red" href="javascript:;">更多&nbsp;&gt;</a>
+	</div>
+	<div class="header-third-class">
+		<a href="javascript:;">省内游</a>
+		<a href="javascript:;">国内游</a>
+		<a href="javascript:;">出境游</a>
+	</div>
+	<div class="header-brand">
+		<div class="brand-title">品牌</div>
+		<div class="brand-area">
+			<a href="javascript:;">临沂</a>
+			<a href="javascript:;">青州</a>
+			<a href="javascript:;">泰安曲阜</a>
+			<a href="javascript:;">枣庄</a>
+			<a href="javascript:;">安徽</a>
+			<a href="javascript:;">福建</a>
+			<a href="javascript:;">广西</a>
+			<a href="javascript:;">湖南</a>
+			<a href="javascript:;">江浙沪</a>
+			<a href="javascript:;">山西</a>
+			<a href="javascript:;">四川</a>
+			<a href="javascript:;">云南</a>
+			<a href="javascript:;">亚洲游</a>
+			<a href="javascript:;">欧洲游</a>
+			<a href="javascript:;">北美游</a>
+			<a href="javascript:;">大洋洲</a>
+		</div>
+	</div>
+</div>
+<div class="header-second-class">
+	<div class="second-title">
+		<img src="../imgs/index-img/icon_tushu.jpg">
+		<a href="javascript:;">图书音像</a>
+		<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+	</div>
+	<div class="header-third-class">
+		<a href="javascript:;">图书</a>
+		<a href="javascript:;">音像</a>
+	</div>
+</div>
+</div>
+<div class="column">
+<div class="header-second-class">
+	<div class="second-title">
+		<img src="../imgs/index-img/icon_jingdian.jpg">
+		<a href="javascript:;">景点</a>
+		<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+	</div>
+	<div class="header-third-class">
+		<a href="javascript:;">青岛</a>
+	</div>
+	<div class="header-brand">
+		<div class="brand-title"> 品牌</div>
+		<div class="brand-area">
+			<a href="javascript:;">极地海洋世界</a>
+			<a href="javascript:;">崂山景区</a>
+		</div>
+	</div>
+</div>
+<div class="header-second-class">
+	<div class="second-title">
+		<img src="../imgs/index-img/icon_jiudian.jpg">
+		<a href="javascript:;">酒店</a>
+		<a class="more" href="javascript:;">更多&nbsp;&gt;</a>
+	</div>
+	<div class="header-third-class">
+		<a href="javascript:;">客房</a>
+	</div>
+	<div class="header-brand">
+		<div class="brand-title">品牌</div>
+		<div class="brand-area">
+			<a href="javascript:;">栈桥王子酒店</a>
+			<a href="javascript:;">青岛海鼎假日酒店</a>
+			<a href="javascript:;">喜客来商务宾馆</a>
+			<a href="javascript:;">青岛丽天大酒店</a>
+			<a href="javascript:;">八大关锦绣园</a>
+			<a href="javascript:;">青龙商务宾馆</a>
+			<a href="javascript:;">泛海名人酒店</a>
+			<a href="javascript:;">航海假日酒店</a>
+			<a href="javascript:;">赶海金玉堂</a>
+			<a href="javascript:;">怡堡酒店</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="column">
+<div class="header-second-class">
+	<div class="second-title">
+		<img src="../imgs/index-img/icon_bendi.jpg">
+		<a href="javascript:;">本地生活</a>
+		<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+	</div>
+	<div class="header-third-class">
+		<a href="javascript:;">利群典当行</a>
+		<a href="javascript:;">利群市北小额贷款</a>
+		<a href="javascript:;">胶州永信小额贷款</a>
+	</div>
+</div>
+<div class="header-second-class">
+	<div class="second-title">
+		<img src="../imgs/index-img/icon_chongzhi.jpg">
+		<a href="javascript:;">充值/合约机</a>
+		<a class="fr" href="javascript:;">更多&nbsp;&gt;</a>
+	</div>
+	<div class="header-third-class">
+		<a href="javascript:;">手机充值</a>
+	</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!--个人详情页面主体内容 -->
+<div class="person">
+<!--左边-->
+<div class="person_left">
+<h2>会员中心</h2>
+<ul class="person_f1">
+<li class="tit"><span class="person_btn"></span>账户信息</li>
+<li><a href="javascript:;">代金券</a></li>
+<li><a href="javascript:;">礼金卡</a></li>
+<li><a href="javascript:;">我的收藏</a></li>
+</ul>
+<ul class="person_f2">
+<li class="tit"><span class="person_btn"></span>订单管理</li>
+<li><a href="javascript:;">全部订单查看</a></li>
+<li><a href="javascript:;">我的评价</a><b class="red">(送积分)</b></li>
+</ul>
+<ul class="person_f3">
+<li class="tit"><span class="person_btn"></span>缴费管理</li>
+<li><a href="javascript:;">缴费记录</a></li>
+<li><a href="javascript:;">手机充值记录</a></li>
+<li><a href="javascript:;">我的缴费</a></li>
+</ul>
+<ul class="person_f4">
+<li class="tit"><span class="person_btn"></span>积分管理</li>
+<li><a href="javascript:;">积分记录</a></li>
+</ul>
+<ul class="person_f5">
+<li class="tit"><span class="person_btn"></span>安全管理</li>
+<li><a href="javascript:;">账户资料</a></li>
+<li><a href="javascript:;">收货地址</a></li>
+<li><a href="javascript:;">安全退出</a></li>
+</ul>
+</div>
+<!--右边-->
+<div class="person_right">
+<h3>账户资料</h3>
+<div class="person_infor">
+<form action="">
+<div class="pi_content">
+<div class="pic_row">
+<span class="picr_tit">&emsp;用户名:</span>
+<span class="user_id"></span>
+</div>
+<div class="pic_row">
+<span class="picr_tit">&emsp;&emsp;密码:</span>
+<span class="user_pwd">******</span><a class="pwd_change"></a>
+</div>
+<div class="pic_row">
+<span class="picr_tit">手机号码:</span>
+<span class="user_phone"></span>
+<a href="javascript:;" class="phone_ar">已验证</a>
+<a href="javascript:;" class="phone_ny">未验证</a>
+</div>
+<div class="pic_row">
+<span class="picr_tit">&emsp;&emsp;邮箱:</span>
+<span class="user_email"></span>
+<a href="javascript:;" class="email_ar" >验证邮箱 </a>
+</div>
+<div class="pic_row">
+<span class="picr_tit">&emsp;&emsp;生日:</span>
+
+</div>
+<div class="pic_row">
+<span class="picr_tit">&emsp;&emsp;性别:	</span>
+<input type="radio" checked="checked" name="user_sex" class="user_sex" />男
+<input type="radio" name="user_sex" class="user_sex" />女
+</div>
+<div class="pic_row">
+<input type="button" value="" class="person_submit" />
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="clr"></div>
+</div>
+
+<!--页脚-->
+<div id="footer">
+<div class="footer-info mb10">
+<dl>
+<dt>购物指南</dt>
+<dd>
+<ul>
+<li><a href="javascript:;">购物流程</a>
+</li>
+<li><a href="javascript:;">会员介绍</a>
+</li>
+<li><a href="javascript:;">发票制度</a>
+</li>
+<li><a href="javascript:;">积分政策</a>
+</li>
+<li><a href="javascript:;">常见问题</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>配送方式</dt>
+<dd>
+<ul>
+<li><a href="javascript:;">自提服务</a>
+</li>
+<li><a href="javascript:;">送货上门</a>
+</li>
+<li><a href="javascript:;">配送范围及时间</a>
+</li>
+<li><a href="javascript:;">全球配送说明</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>支付方式</dt>
+<dd>
+<ul>
+<li><a href="javascript:;">线上支付</a>
+</li>
+<li><a href="javascript:;">货到付款</a>
+</li>
+<li><a href="javascript:;">利群金卡支付</a>
+</li>
+<li><a href="javascript:;">礼品卡支付</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>售后服务</dt>
+<dd>
+<ul>
+<li><a href="javascript:;">退换货政策</a>
+</li>
+<li><a href="javascript:;">退款说明</a>
+</li>
+<li><a href="javascript:;">品牌售后服务</a>
+</li>
+<li><a href="javascript:;">投诉及建议</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>商家服务</dt>
+<dd>
+<ul>
+<li><a href="javascript:;">商家入驻</a>
+</li>
+<li><a href="javascript:;">商家管理规定</a>
+</li>
+<li><a href="javascript:;">商家中心</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>利群商城订阅号</dt>
+<dd>
+<a href="javascript:;">
+<img src="../imgs/index-img/foot-ewm1.jpg" alt="" />
+</a>
+</dd>
+</dl>
+<dl>
+<dt>利群商城服务号</dt>
+<dd>
+<a href="javascript:;">
+<img src="../imgs/index-img/foot-ewm2.jpg" alt="" />
+</a>
+<a href="javascript:;">更多联盟用户</a>
+</dd>
+</dl>
+</div>
+<div class="clr"></div>
+<div class="footer-logo">
+<img src="../imgs/index-img/foot_bg.jpg" alt="" />
+</div>
+<div class="row-wrap"></div>
+<div class="footer-bottom">
+<ul>
+<li><a href="javascript:;">关于我们</a>
+</li>
+<li><a href="javascript:;">联系我们</a>
+</li>
+<li><a href="javascript:;">诚聘英才</a>
+</li>
+<li><a href="javascript:;">手机利群</a>
+</li>
+<li><a href="javascript:;">销售联盟</a>
+</li>
+<li><a href="javascript:;">友情链接</a>
+</li>
+<li><a href="javascript:;">网站合作</a>
+</li>
+<li><a href="javascript:;">帮助中心</a>
+</li>
+<li class="lastitem"><a href="javascript:;">版权说明</a>
+</li>
+</ul>
+<ul style="width: 710px;">
+<li><a href="javascript:;">利群集团</a>
+</li>
+<li><a href="javascript:;">百货集团</a>
+</li>
+<li><a href="javascript:;">利群网</a>
+</li>
+<li><a href="javascript:;">利群酒店</a>
+</li>
+<li><a href="javascript:;">利群房地产</a>
+</li>
+<li><a href="javascript:;">利群旅行社</a>
+</li>
+<li><a href="javascript:;">利群药品</a>
+</li>
+<li><a href="javascript:;">利群影城</a>
+</li>
+<li><a href="javascript:;">利群水站</a>
+</li>
+<li class="lastitem"><a href="javascript:;">利群家政</a>
+</li>
+</ul>
+<p class="copy">鲁ICP证09054331号-2 Copyright&copy;2004-2015 利群集团青岛电子商务有限公司 版权所有
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/pic1.gif" alt="" />
+</a>
+</p>
+<div class="footer-rz">
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic4.jpg">
+</a>
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic1.jpg">
+</a>
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic2.jpg">
+</a>
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic3.png">
+</a>
+</div>
+</div>
+</div>
+</body>
+</html>
