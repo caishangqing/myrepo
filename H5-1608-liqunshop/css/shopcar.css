@@ -1,0 +1,279 @@
+/*
+ * 购物车页面
+ *
+ * */
+/*重置样式表*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+}
+fieldset,
+img {
+	border: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+ul,
+ol {
+	list-style: none;
+}
+body {
+	color: #333;
+	font: 12px/24px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+	background: #fff;
+	/* overflow-y:scroll;*/
+
+	overflow-x: hidden;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	color: #666;
+}
+/*a:hover, a:active, a:focus { color:#ff8400;}*/
+
+li,
+dt {
+	overflow: hidden;
+}
+.sc_center {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	height: 185px;
+}
+.nav_top {
+	height: 25px;
+	overflow: hidden;
+}
+.nav_top ul li{
+	margin: 0 4px;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+.nav_top ul li img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav_top ul li>a>img{
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+.nt_left{
+	float: left;
+}
+.nt_right{
+	float: right;
+}
+
+.sc_center .banner{
+	position: relative;
+	height: 160px;
+	background: url(../imgs/shopcar-img/shopcart_titile.jpg)no-repeat center;
+}
+.sc_center .banner a{
+	width: 220px;
+	height: 100px;
+	position: absolute;
+	left: 10px;
+	top: 0;
+}
+
+.scm_title{
+	height: 36px;
+	line-height: 36px;
+}
+.scm_title input{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cart{
+	display: block;
+	color: #6B6B6B;
+	width: 998px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	font-size: 12px;
+}
+
+.cart_tit{
+	height: 31px;
+	background-color: #DEDEE0;
+	border-bottom:1px solid #ccc;
+}
+.cart_tit ul li{
+	line-height: 31px;
+	height: 31px;
+	text-align: center;
+	float: left;
+}
+.cart_goods ul{
+	height: 78px;
+	overflow: hidden;
+}
+.cart_goods ul li{
+	float: left;
+	height: 78px;
+	line-height: 78px;
+	text-align: center;
+	overflow: hidden;
+}
+.cart_goods ul li.goods_name img{
+	vertical-align: middle;
+	height: 70px;
+	width: 70px;
+	margin-left: 35px;
+	margin-top: 3px;
+	border: 1px solid #DEDEDE;
+	float: left;
+}
+.cart_goods ul li.goods_name .name{
+	float: left;
+	margin-left:10px;
+	height: 78px;
+	width: 190px;
+}
+.cart_goods ul li.goods_num a{
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url("../imgs/detail-img/newicon201301014.png");
+}
+
+
+
+.reduce_num{
+	background-position: -216px -206px;
+}
+.reduce_num:hover{
+	background-position: -216px -190px;
+}
+.add_num{
+	background-position: -232px -206px;
+}
+.add_num:hover{
+	background-position: -232px -190px;
+}
+.cart_goods ul li.goods_num .show_num{
+	height: 22px;
+	width: 40px;
+	margin:0 2px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #C9C9C9;
+}
+
+.clear,.ct_num{
+	color: #D10707!important;
+}
+.clear:hover{
+	text-decoration: underline;
+}
+.cart_total{
+	text-align: right;
+	border-top: 1px solid #ddd;
+	height: 35px;
+	line-height: 35px;
+	background-color: #F3F3F3;
+}
+.continue,.account{
+	cursor: pointer;
+	height: 35px;
+	width: 130px;
+	border: 0;
+	display: inline-block;
+}
+.ct_total{
+	font-size: 16px;
+	color: #D10707;
+	font-weight: 900;
+	display: inline-block;
+}
+.continue{
+	background: url(../imgs/shopcar-img/continue_buy.jpg)no-repeat center;
+}
+.account{
+	background: url(../imgs/shopcar-img/shopcart_buy_01.jpg)no-repeat center;
+}
+
+
+.goods_name{
+	width: 310px;
+}
+.goods_price{
+	width: 110px;
+}
+.goods_num{
+	width: 120px;
+}
+.goods_total{
+	width: 95px;
+}
+.goods_intergral{
+	width: 90px;
+}
+.goods_option{
+	width: 100px;
+}
+.goods_state{
+	width: 168px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

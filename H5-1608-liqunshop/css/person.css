@@ -73,7 +73,7 @@
 	text-indent: 12px;
 }
 .person_infor{
-	padding: 24px 0 0 100px;
+	padding: 24px 0 10px 80px;
 }
 
 .pi_content .pic_row{
@@ -95,8 +95,36 @@
 	background: url(../imgs/person-img/mUserb.jpg)no-repeat;
 }
 
+/*密码更改*/
 
-
+.pwd_change>*{
+	display: block;
+}
+.pwd_change label{
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #AAAAAA;
+	margin: 4px 0;
+}
+.pwd_change label span{
+	color: orange;
+}
+.pwd_change input{
+	width: 220px;
+	height: 18px;
+	padding: 5px 6px;
+	line-height: 18px;
+}
+.pwd_change .pwd_change{
+	width: 80px;
+	margin-top: 20px;
+	cursor: pointer;
+	height: 38px;
+	background-image: linear-gradient(to top, #f7f7f7 0px, #f2f2f2 100%);
+	background-color: #F7F7F7;
+	border: 1px solid #ddd;
+}
 
 
 
