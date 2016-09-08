@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>购物车-利群商城</title>
+<link rel="stylesheet" href="../css/foot.css" />
+<link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
+<link rel="stylesheet" type="text/css" href="../css/head_shop.css" />
+<link rel="stylesheet" type="text/css" href="../css/indent.css" />
+<script src="../jq/jqm.js"></script>
+<script src="../jq/distpicker.data.js"></script>
+<script src="../jq/distpicker.js"></script>
+<script src="../jq/indent.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="header sc_center">
+<!--头部小导航-->
+<div class="nav_top">
+<ul class="nt_left">
+<li>
+<img src="../imgs/shopcar-img/left_star.jpg" alt="" />
+<a href="javascript:;" class="collect_site">收藏本站</a>
+</li>
+<li>
+<img src="../imgs/shopcar-img/space_line.jpg" />
+</li>
+<li>
+您好，欢迎来利群商城!
+</li>
+</ul>
+
+<ul class="nt_right">
+<li>您好：
+<a href="javascript:;" class="user_name">用户名</a>
+<a href="javascript:;" class="person">会员中心</a>
+<a href="javascript:;" class="quit">退出</a>
+</li>
+<li>
+<img src="../imgs/shopcar-img/space_line.jpg" />
+</li>
+<li>
+<img src="../imgs/shopcar-img/mobile.jpg" alt="" />
+<a href="javascript:;">手机版</a>
+</li>
+<li>
+<img src="../imgs/shopcar-img/space_line.jpg" />
+</li>
+<li>
+<img src="../imgs/shopcar-img/right_star.jpg" alt="" />
+<a href="javascript:;">我的订单</a>
+</li>
+<li>
+<img src="../imgs/shopcar-img/space_line.jpg" />
+</li>
+<li>
+<a href="javascript:;">利群官网</a>
+</li>
+<li>
+<img src="../imgs/shopcar-img/space_line.jpg" />
+</li>
+<li>
+<a href="javascript:;">
+	<img src="../imgs/shopcar-img/tdcode.jpg" alt="" />
+</a>
+<a href="javascript:;">
+	<img src="../imgs/shopcar-img/qq.jpg" alt="" />
+</a>
+<a href="javascript:;">
+	<img src="../imgs/shopcar-img/sina.jpg" alt="" />
+</a>
+</li>
+</ul>
+</div>
+<div class="banner indent_banner">
+<a href="../index.html"></a>
+</div>
+</div>
+
+<!--详情页主要内容-->
+<form class="indent_main">
+<!--收货地址-->
+<div class="frame f1">
+<h2 class="title">收货地址<a href="javascript:;">修改收货地址</a></h2>
+
+<!--存储的收货地址-->
+<div class="receiver_now">
+<div class="txtinfo">
+收货人：<span class="rece_name">蔡尚卿</span>
+</div>
+<div class="txtinfo">
+手机:<span class="phone_1">18625746559</span>
+电话:<span class="phone_2"></span>
+</div>
+<div class="txtinfo">
+地址： <span class="addr">河南郑州市金水区</span>
+邮编： <span class="postal">458030</span>
+</div>
+<div class="txtinfo">
+购买人真实姓名：<span class="rece_realname">蔡尚卿</span>
+购买人身份证： <span class="rece_id"></span>
+</div>
+</div>
+<!--修改收货地址-->
+<div class="address_edit">
+<div class="txtinfo">
+<input type="radio" name="postway" checked="checked" />
+<span class="rece_name" style="font-size: 14px; font-weight: bold";>蔡尚卿</span>
+<span class="addr">河南郑州市金水区</span>
+<span class="phone_1">18625746559</span>
+</div>
+<ul class="modify">
+<li>
+<label for="m_name">姓名：</label>
+<input type="text" name="m_name" id="m_name" value="" />
+<label for="m_sex">性别：</label>
+<select name="m_sex" id="m_sex">
+<option value="male">男</option>
+<option value="female">女</option>
+</select>
+<label for="m_email">邮箱：</label>
+<input type="text" id="m_email" name="m_email" />
+</li>
+<li>
+<label for="m_phone_1">手机：</label>
+<input type="text" id="m_phone1" name="m_phone_1" />
+<label for="m_phone_2">电话：</label>
+<input type="text" id="m_phone_2" name="m_phone_2" />
+</li>
+<li>
+<label for="m_place">收货地址：</label>
+<div data-toggle="distpicker" id="m_place">
+<select></select>
+<select></select>
+<select></select>
+</div>
+<input type="m_place_indetail" />
+</li>
+<li>
+<label for="m_realname">购买者真实姓名：</label>
+<input type="text" value="" name="m_realname" id="m_realname" />
+<label for="m_id">购买人身份证：</label>
+<input type="text" value="" name="m_id" id="m_id" />
+</li>
+<li>
+<p style="color: #FF0000;">省外用户商品的运费将根据实际情况进行调整。</p>
+</li>
+</ul>
+
+<!--自提-->
+<div class="txtinfo">
+<input type="radio" name="postway"/>
+<font style="font-size: 14px; font-weight: bold;">自提：</font>利群商城在青岛、烟台、威海、日照、潍坊、淄博、莱芜、东营等利群商场、酒店、批发、药店、便利店共设立107个自提点。
+</div>
+<div class="txtinfo">
+<p style="color: #FF0000;">温馨提示：修改收货地址后需要重新选择支付方式。</p>
+</div>
+<div class="txtinfo confirm">
+<a href="javascript:;"><img src="../imgs/indent-img/saveAddress.jpg"/></a>
+<a href="javascript:;"><img src="../imgs/indent-img/cancelModifyAddress.jpg"/></a>
+</div>
+
+</div>
+</div>
+<!--支付方式-->
+<div class="frame f2">
+<h2 class="title">支付方式</h2>
+<ul class="paylist">
+	<li class="pay_online">
+		<span>网上支付：</span>
+		<div style="display: inline-block;">
+			<input checked="checked" type="radio" name="pay" id="payway" /><label for="payway">在线支付 :包含快捷支付、网银支付、分期付款、支付宝、工资卡等支付平台</label>
+		</div>
+	</li>
+	<li>
+		<font color="red">说明：青岛市内五区外需要网上支付。</font>
+	</li>
+	<li>备注：选择网上支付的用户，如果24小时内未支付，将自动取消订单。</li>
+	<li>第三方平台订单需网上支付</li>
+</ul>
+<div class="clr"></div>
+</div>
+<!--商品确认-->
+<div class="frame f3">
+<h2 class="title">商品确认<a href="javascript:;">修改商品</a></h2>
+<table border="0" cellspacing="0" width="100%" >
+	<tr class="hl title">
+		<th>商品编码</th>
+		<th style="width: 400px;">商品名称</th>
+		<th>单品价格</th>
+		<th>商品数量</th>
+		<th>单品小计</th>
+	</tr>
+	<tr class="ll">
+		<td colspan="5" style="background-color: #E1E1E1;text-align: left;text-indent:20px;" >以下商品由
+			<font style="color: red;font-weight: 900;"> 利群商城 </font>
+			配送
+		</td>
+	</tr>
+	<tr class="goods_list">
+		<td>01278812</td>
+		<td>集味村双黄白莲蓉月饼720g</td>
+		<td>158.00</td>
+		<td>15</td>
+		<td>2370.00</td>
+	</tr>
+	<tr class="hl" style="background-color: #F3F3F3;">
+		<td></td>
+		<td style="text-align: right;">商品金额：2370.00</td>
+		<td>总重量：12.00</td>
+		<td>配送费：98.00</td>
+		<td>订单金额：2468.00</td>
+	</tr>
+	<tr class="hl">
+		<td colspan="4"></td>
+		<td>全部费用：<font style="color: red;font-size: 18px;">2468.00</font></td>
+	</tr>
+	<tr>
+		<td colspan="5" style="text-align: left; text-indent: 20px;" >注意：请认真核对您购买的商品。</td>
+	</tr>
+</table>
+
+</div>
+<!--金额确认-->
+<div class="frame f4">
+<h2 class="title">金额确认</h2>
+<table width="100%" cellspacing="0">
+<tr>
+<th>全部费用</th>
+<th>-</th>
+<th>红包支付</th>
+<th>-</th>
+<th>代金券冲抵</th>
+<th>-</th>
+<th>礼品卡支付</th>
+<th>-</th>
+<th>资金账户支付</th>
+<th>=</th>
+<th>您需要支付</th>
+</tr>
+<tr>
+<td class="oldamount"></td>
+<td></td>
+<td class="redpacket"></td>
+<td></td>
+<td class="gift"></td>
+<td></td>
+<td class="card"></td>
+<td></td>
+<td class="member"></td>
+<td></td>
+<td class="newamount"></td>
+</tr>
+</table>
+<p style="background: #F3F3F3;height: 20px; font-size: 12px;line-height: 20px;text-indent: 20px;">注意：请认真核对您的金额。</p>
+</div>
+<!--其他要求-->
+<div class="frame f5">
+<h2 class="title">其他要求</h2>
+<ul>
+<li><span>收货时间：</span>
+	<input type="radio" name="senddatetype" value="0" />收货时间不限
+	<input type="radio" name="senddatetype" value="0" />只工作日（双休日/节假日不用送）
+	<input type="radio" name="senddatetype" value="0" />只双休日/节假日送货（工作日不送）
+</li>
+<li><span>显示价格：</span>
+	<input type="radio" name="showprice" value="0" />送货单显示商品价格
+	<input type="radio" name="showprice" value="1" />送货单不显示商品价格
+</li>
+<li><span>增加备注：</span>
+	是<input type="radio" name="addremark" value="1" />
+	否<input type="radio" name="addremark" value="1" />如果您有特殊要求如发票明细、商品尺码等,请选择"是",并填写订单备注
+</li>
+<li>(注意:一、因物流受到交通情况等各种条件限制,收货时间请勿规定具体时间点。二、因省外的顾客朋友购买大家电需要使用第三方物流配送，运费将根据实际情况进行调整。)</li>
+<li><span>发票类型：</span>
+	<input type="radio" name="showprice" value="0" />普通发票
+	<input type="radio" name="showprice" value="1" />电子发票（建议选择电子发票）
+</li>
+</ul>
+</div>
+<div class="submit_order">
+<input type="button" value="" class="submit" />
+</div>
+
+</form>
+
+<!--页脚-->
+<div id="footer">
+<div class="row-wrap"></div>
+<div class="footer-bottom">
+<ul>
+<li><a href="javascript:;">关于我们</a>
+</li>
+<li><a href="javascript:;">联系我们</a>
+</li>
+<li><a href="javascript:;">诚聘英才</a>
+</li>
+<li><a href="javascript:;">手机利群</a>
+</li>
+<li><a href="javascript:;">销售联盟</a>
+</li>
+<li><a href="javascript:;">友情链接</a>
+</li>
+<li><a href="javascript:;">网站合作</a>
+</li>
+<li><a href="javascript:;">帮助中心</a>
+</li>
+<li class="lastitem"><a href="javascript:;">版权说明</a>
+</li>
+</ul>
+<ul style="width: 710px;">
+<li><a href="javascript:;">利群集团</a>
+</li>
+<li><a href="javascript:;">百货集团</a>
+</li>
+<li><a href="javascript:;">利群网</a>
+</li>
+<li><a href="javascript:;">利群酒店</a>
+</li>
+<li><a href="javascript:;">利群房地产</a>
+</li>
+<li><a href="javascript:;">利群旅行社</a>
+</li>
+<li><a href="javascript:;">利群药品</a>
+</li>
+<li><a href="javascript:;">利群影城</a>
+</li>
+<li><a href="javascript:;">利群水站</a>
+</li>
+<li class="lastitem"><a href="javascript:;">利群家政</a>
+</li>
+</ul>
+<p class="copy">鲁ICP证09054331号-2 Copyright&copy;2004-2015 利群集团青岛电子商务有限公司 版权所有
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/pic1.gif" alt="" />
+</a>
+</p>
+<div class="footer-rz">
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic4.jpg">
+</a>
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic1.jpg">
+</a>
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic2.jpg">
+</a>
+<a target="_blank" href="javascript:;">
+<img src="../imgs/index-img/tip_pic3.png">
+</a>
+</div>
+</div>
+</div>
+</body>
+
+</html>

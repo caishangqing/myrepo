@@ -1,32 +1,154 @@
+/*订单详情页*/
+
+/*更换banner图片*/
+
+.indent_banner{
+	background-image: url(../imgs/indent-img/orderView_top.jpg)!important;
+}
+.clr{
+	clear: both;
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+}
+/*收货地址*/
+
+.indent_main{
+	width: 1000px;
+	margin: 10px auto;
+}
+.frame{
+	width: 1000px;
+	border: 1px solid #ccc;
+}
+
+.frame h2.title{
+	text-indent: 28px;
+	line-height: 32px;
+	font-size: 16px;
+	padding: 0 10px;
+	color: #666;
+	height: 32px;
+	border-bottom: 1px solid #ccc;
+	background-image: url(../imgs/indent-img/frame_top.jpg);
+}
+.frame h2.title a{
+	font-weight: 100;
+	float: right;
+	font-size: 12px;
+}
+
+.txtinfo{
+	padding-left: 32px;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #ccc;
+}
+.txtinfo span{
+	margin-left: 4px;
+	margin-right: 15px;
+}
+
+.address_edit{
+
+}
+
+.modify{
+
+}
+.modify li{
+	line-height: 50px;
+	padding-left: 64px;
+	height: 50px;
+	border-bottom: 1px dashed #ccc;
+}
+.modify li input{
+	display: inline-block;
+	vertical-align: middle;
+	height: 26px;
+	width: 296px;
+}
+.modify li label{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#m_place{
+	display: inline-block;
+}
+#m_place select{
+	margin: 0 4px;
+	height: 26px;
+	vertical-align: middle;
+}
+.confirm {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+}
+.confirm a img{
+	margin: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.paylist{
+	padding: 42px 30px 0 30px;
+	overflow: hidden;
+}
+.paylist>li{
+	height: 30px;
+	margin-top: 10px;
+}
+.pay_online{
+	border-bottom: 1px dotted #ccc;
+}
 
 
+.f3 table tr.hl{
+	height: 35px;
+}
+.f3 table tr.ll{
+	height: 25px;
+}
+.f3 table tr.title th{
+	color: #cb2d3b;
+	border-bottom: 1px solid #999;
+}
+.f3 table tr td{
+	border-bottom: 1px solid #eee;
+}
+.f3 table tr td {
+	text-align: center;
+}
 
+.goods_list td{
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+}
+.f4 table th{
+	border-bottom: 1px solid #666;
+}
+.f4 table td{
+	height: 30px;
+	border-bottom: 1px dotted #999;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.f5 ul li{
+	padding-left: 20px;
+	height: 30px;
+	border-bottom: 1px solid #CECECE;
+}
+.submit_order{
+	height: 120px;
+	line-height: 120px;
+	text-align: center;
+}
+.submit_order .submit{
+	height: 36px;
+	width: 264px;
+	border: 0;
+	background: url(../imgs/indent-img/orderinfo_btn.jpg)no-repeat;
+}
 

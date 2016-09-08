@@ -1,0 +1,114 @@
+/*
+ * 购物车页面
+ *
+ * */
+/*重置样式表*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+}
+fieldset,
+img {
+	border: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+ul,
+ol {
+	list-style: none;
+}
+body {
+	color: #333;
+	font: 12px/24px "Arial,Helvetica,sans-serif";
+	background: #fff;
+	/* overflow-y:scroll;*/
+
+	overflow-x: hidden;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	color: #666;
+}
+/*a:hover, a:active, a:focus { color:#ff8400;}*/
+
+li,
+dt {
+	overflow: hidden;
+}
+.sc_center {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	height: 185px;
+}
+.nav_top {
+	height: 25px;
+	overflow: hidden;
+}
+.nav_top ul li{
+	margin: 0 4px;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+.nav_top ul li img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav_top ul li>a>img{
+	height: 16px;
+	width: 16px;
+	vertical-align: middle;
+}
+.nt_left{
+	float: left;
+}
+.nt_right{
+	float: right;
+}
+
+.sc_center .banner{
+	position: relative;
+	height: 160px;
+	background: url(../imgs/shopcar-img/shopcart_titile.jpg)no-repeat center;
+}
+.sc_center .banner a{
+	width: 220px;
+	height: 100px;
+	position: absolute;
+	left: 10px;
+	top: 0;
+}
