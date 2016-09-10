@@ -18,7 +18,7 @@ $(function() {
 	var $wH = $(window).innerHeight(); //获取屏幕的高度
 	$(window).on("scroll", function(e) {
 		var $sH = document.documentElement.scrollTop || document.body.scrollTop;
-		if ($sH > 1000) {
+		if($sH > 1000) {
 			$(".nav-right").fadeIn(400);
 		} else {
 			$(".nav-right").css("display", "none");
@@ -57,8 +57,6 @@ $(function() {
 	// 	swiper1.startAutoplay();
 	// })
 
-
-
 	//页面中的小轮播
 	var swiper2 = new Swiper('.smslider', {
 			autoplay: 4000,
@@ -73,7 +71,6 @@ $(function() {
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
 	})
-
 
 	//长轮播
 	var mySwiper3 = new Swiper('.longslider', {
@@ -105,26 +102,41 @@ $(function() {
 	//楼层显示
 	$(".nav-right").on("click mouseenter mouseleave", "li", function(e) {
 		var $index = $(this).index();
-		if (e.type == "click") {
+		if(e.type == "click") {
 			$(this).siblings().each(function() {
 				$(this).find("img").attr({
-					"src":"imgs/index-img/nav" + ($(this).index() + 1) + ".jpg",
-					"data-on":""
+					"src": "imgs/index-img/nav" + ($(this).index() + 1) + ".jpg",
+					"data-on": ""
 				})
 			})
 			$(this).find("img").attr({
 				"src": "imgs/index-img/nav" + ($index + 1) + "r.jpg",
 				"data-on": "on"
 			})
-		} else if (e.type == "mouseenter") {
+		} else if(e.type == "mouseenter") {
 			$(this).find("img").attr("src", "imgs/index-img/nav" + ($index + 1) + "r.jpg")
-		} else if (e.type == "mouseleave") {
-			if ($(this).find("img").attr("data-on") != "on") {
+		} else if(e.type == "mouseleave") {
+			if($(this).find("img").attr("data-on") != "on") {
 				$(this).find("img").attr("src", "imgs/index-img/nav" + ($index + 1) + ".jpg")
 			}
 		}
 	})
 
+	//cookie登录
+	if($.cookie("user")) {
+		$("#username").text($.cookie("user")).show();
+		$("#login,#regist").hide();
+		$("#logout").show();
+	} else {
+		$("#username,#logout").hide();
+		$("#login,#regist").show();
+	}
+
+	$("#logout").click(function() {
+		$.removeCookie("user");
+		console.log($.cookie("user"))
+		location.reload();
+	})
 
 
 

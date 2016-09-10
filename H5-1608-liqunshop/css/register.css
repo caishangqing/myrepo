@@ -25,7 +25,7 @@ body {
 	color: #666;
 	position: relative;
 }
-#register .reg label {
+#register .reg label{
 	display: inline-block;
 	width: 104px;
 	height: 38px;
@@ -33,7 +33,7 @@ body {
 	text-align: center;
 	letter-spacing: 1px;
 }
-#register .reg label b {
+#register .reg label b{
 	color: red;
 }
 #register .reg input {
@@ -42,26 +42,23 @@ body {
 	vertical-align: middle;
 	padding: 10px 40px 10px 8px;
 	border: 1px solid #aaa;
-
 	display: inline-block;
 }
-#register .reg span {
-	height: 36px;
-	width: 30px;
-	position: absolute;
-	left: 350px;
-	top: 12px;
-}
-#register .reg span img {
+
+#register .reg img{
+	height: 16px;
+	width: 16px;
 	position: absolute;
 	left: 0;
 	top: 0;
+	left: 350px;
+	top: 12px;
 }
-#register .reg span img.reg_success{
+#register .reg img.reg_success{
 	display: none;
 }
-
-#register .reg .msg{
+/*验证信息显示*/
+#register  label.error{
 	width: 240px;
 	height: 36px;
 	border: 1px solid #F25B7C;
@@ -70,8 +67,9 @@ body {
 	left:390px;
 	top: 2px;
 	background:#FFEBEB;
-	display: none;
+	text-align: center;
 }
+
 
 #register #reg_test{
 	width: 130px;
@@ -79,46 +77,57 @@ body {
 	font-size: 18px;
 	padding: 0;
 	text-indent: 10px;
-	letter-spacing: 1px;
+
+	display: inline-block;
+	vertical-align: middle;
+
+
 }
 .test_img{
+	vertical-align: middle;
+	height: 40px;
 	width: 300px;
-	display: inline-block;
-	vertical-align: middle;
 	margin-left: 10px;
-}
-.test_img img{
-	vertical-align: middle;
 	display: inline-block;
-}
-#register .test_img span{
-	width: 100px;
 	line-height: 40px;
-	vertical-align: middle;
-	position: static!important;
-	display: inline-block;
-	margin-left: 6px;
 }
+
 #register .test_img span a{
 	color: #3A78D1;
 	cursor: pointer;
 }
-.protocol{
-	font-size: 12px;
-	height: 80px;
-	line-height: 80px;
-
+#test_code{
+letter-spacing: 3px;
+	border: 1px solid #aaa;
+	display: inline-block;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 20px;
+	margin: 0 10px;
+	width: 110px;
 }
+#register .reg_agree{
+	padding-top: 10px;
+	padding-left: 110px;
+}
+#register .reg_agree #agree{
+	width: 16px;
+	height: 16px;
+}
+
+
 .submit{
 	margin-left: 104px;
-
+	margin-top: 40px;
 }
 .protocol a{
 	color: #3A78D1;
 	cursor: pointer;
 }
 
-.submit #btn{
+.submit #submit_btn{
+	cursor: pointer;
 	height: 36px;
 	width: 270px;
 	border:0;

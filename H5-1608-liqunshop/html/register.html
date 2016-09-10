@@ -6,7 +6,12 @@
 <link rel="stylesheet" type="text/css" href="../css/head.css" />
 <link rel="stylesheet" type="text/css" href="../css/register.css" />
 <link rel="stylesheet" href="../css/foot.css" />
+<link rel="stylesheet" type="text/css" href="../jq/jq-ui/jquery-ui.min.css"/>
 <script src="../jq/jqm.js"></script>
+<script src="../jq/jquery.form.js" type="text/javascript" charset="utf-8"></script>
+<script src="../jq/jq-ui/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../jq/validation/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../jq/validation/messages_zh.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../jq/jquery.cookie.js"></script>
 <script src="../jq/register.js"></script>
 </head>
@@ -138,54 +143,49 @@ Hi，欢迎来到利群商城！
 <form action="" id="reg_form" name="reg_form">
 <!--账号-->
 <div class="reg">
-<label for="reg_name"><b>*</b>账户名：</label>
-<input type="text" name="reg_name" id="reg_name" placeholder="邮箱/用户名/手机号" />
-<span>
+<label for="reg_name">&emsp;&emsp;<b>*</b>账户名：</label>
+<input type="text" name="reg_name" id="reg_name" placeholder="邮箱/用户名/手机号" style="position: relative;" />
+
 <img class="reg_bg" src="../imgs/register-img/one4.jpg" alt="" />
 <img class="reg_success" src="../imgs/register-img/sucess.png" alt="" />
-</span>
-<div class="msg msg_name"></div>
 </div>
 <!--密码-->
 <div class="reg">
 <label for="reg_pwd"><b>*</b>请设置密码：</label>
-<input type="text" name="reg_pwd" id="reg_pwd"  />
-<span>
+<input type="password" name="reg_pwd" id="reg_pwd"  />
+
 <img class="reg_bg" src="../imgs/register-img/one5.jpg" alt="" />
 <img class="reg_success" src="../imgs/register-img/sucess.png" alt="" />
-</span>
-<div class="msg msg_pwd"></div>
+
 </div>
 <!--再次确认密码-->
 <div class="reg">
 <label for="reg_repwd"><b>*</b>请确认密码：</label>
-<input type="text" name="reg_repwd" id="reg_repwd"  />
-<span>
+<input type="password" name="reg_repwd" id="reg_repwd"  />
+
 <img class="reg_bg" src="../imgs/register-img/one5.jpg" alt="" />
 <img class="reg_success" src="../imgs/register-img/sucess.png" alt="" />
-</span>
-<div class="msg msg_repwd"></div>
+
 </div>
 <!--验证码-->
 <div class="reg">
 <label for="reg_test"><b>*</b>请确认密码：</label>
 <input type="text" name="reg_test" id="reg_test" />
 <div class="test_img">
-	<img src="../imgs/register-img/code.jpg"/>
-	<span>看不清？<a href="javascript:;">换一张</a></span>
+	<span id="test_code"></span>
+	<span style="display: block;text-indent: 20px;">看不清？<a id="checkcode" href="javascript:;">换一张</a></span>
+</div>
+</div>
+<div class="reg reg_agree">
+<input type="checkbox" name="agree" id="agree"  class="{required:true}"  />
+我已阅读并同意<a href="javascript:;">《利群商城交易条款》</a>
+</div>
+
+<div class="submit">
+<input type="submit" form="reg_form" value="" class="submit_btn" id="submit_btn" />
 </div>
 </div>
 </form>
-
-<div class="submit">
-	<p class="protocol">
-	<input type="checkbox" />
-	我已阅读并同意<a href="javascript:;">《利群商城交易条款》</a>
-</p>
-<input type="button" value="" class="btn" id="btn" />
-</div>
-</div>
-
 <!--页脚-->
 <div id="footer">
 <div class="footer-bottom">
