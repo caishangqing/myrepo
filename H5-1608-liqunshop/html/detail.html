@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../css/foot.css" />
 <script src="../jq/jqm.js"></script>
 <script src="../jq/jquery.cookie.js"></script>
+<script src="../jq/base.js" type="text/javascript" charset="utf-8"></script>
 <script src="../jq/detail.js"></script>
 </head>
 <body>
@@ -24,17 +25,18 @@
 <!--顶部信息-->
 <div class="header-info cbody">
 <div id="headLoginInfo" class="fl">
-Hi，欢迎来到利群商城！
-<a href="javascript:;">请登录 </a>
-<a href="javascript:;">免费注册</a>
+Hi，<span id="username"></span>欢迎来到利群商城！
+<a id="login" href="html/login.html">请登录 </a>
+<a id="regist" href="html/register.html">免费注册</a>
+<a id="logout" href="javascript:;">退出</a>
 </div>
 <ul class="header-info-right">
-<li><a href="javascript:;">我的订单</a>
+<li><a href="javascript:;" id="myorder" >我的订单</a>
 </li>
 <li class="header-spacing">|</li>
 <li>
 <img class="header-icon fl" alt="" src="../imgs/index-img/member_center.jpg" />
-<a href="javascript:;">会员中心</a>
+<a href="javascript:;"  id="person" >会员中心</a>
 </li>
 <li class="header-spacing">|</li>
 <li class="server">
@@ -119,7 +121,7 @@ Hi，欢迎来到利群商城！
 <!--购物车-->
 <div class="header-search-cart">
 <div class="fl relative">
-<a href="javascript:;">
+<a href="javascript:;"  id="shopcar">
 <img src="../imgs/index-img/go_cart.jpg" alt="" />
 </a>
 <div class="headerCarCount">0</div>
@@ -229,9 +231,11 @@ Hi，欢迎来到利群商城！
 <div class="drm_left">
 <div class="drml_smimg">
 <img src="../imgs/detail-img/201608081421385800.jpg" alt="" />
+<div class="glass"></div>
 </div>
 <!--放大镜图片-->
 <div class="drml_bgimg">
+<img src="../imgs/detail-img/bg.png" alt="" />
 </div>
 </div>
 <div class="drm_right">
