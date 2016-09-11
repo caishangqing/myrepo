@@ -5,7 +5,6 @@
 $(function() {
 
 	var $floor_tab = $(".floor-right");
-
 	//选项卡
 	$floor_tab.on("mouseenter", ".floor-tab li", function(e) {
 		var $tar = $(e.delegateTarget).find(".tab-content");
@@ -122,21 +121,50 @@ $(function() {
 		}
 	})
 
-	//cookie登录
+
+//cookie登录
 	if($.cookie("user")) {
 		$("#username").text($.cookie("user")).show();
 		$("#login,#regist").hide();
 		$("#logout").show();
+		$("#myorder").click(function(){
+			location.replace("html/indent.html?username="+$.cookie("user"))
+		})
+		$("#person").click(function(){
+			location.replace("html/person.html?username="+$.cookie("user"))
+		})
+		$("#shopcar").click(function(){
+			location.replace("html/shopcar.html?username="+$.cookie("user"))
+		})
+
 	} else {
 		$("#username,#logout").hide();
 		$("#login,#regist").show();
+		$("#myorder,#person,#shopcar").click(function(){
+			location.replace("html/login.html");
+		})
 	}
-
+//	退出销毁cookie
 	$("#logout").click(function() {
 		$.removeCookie("user");
-		console.log($.cookie("user"))
 		location.reload();
 	})
+
+//搜索
+	$("#header-search-btn").on("click",function(){
+		if($("#header-search-input").val()!=""){
+			location.replace("html/search.html?keyword="+$("#header-search-input").val());
+		}
+	})
+
+
+//	购物车里的数量
+	var num=($.type($.cookie("goods")) !="undefined")?JSON.parse($.cookie("goods")).length:0;
+	$(".headerCarCount").text(num);
+
+
+
+
 
 
 

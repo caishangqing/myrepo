@@ -6,9 +6,10 @@ $().ready(function() {
 	$("#reg_form").validate({
 		//表单提交事件句柄
 		submitHandler: function(form) {
+
 			$.cookie("user",$("#reg_name").val(),{
 				expires:7,
-				path:"/"
+				path:"/H5-1608-liqunshop"
 			});
 			location.href="../";
 		},

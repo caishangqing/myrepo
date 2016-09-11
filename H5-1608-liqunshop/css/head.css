@@ -629,3 +629,18 @@ a {
 	float: left;
 	overflow: hidden;
 }
+
+
+#username{
+	padding: 0 10px;
+	color: #0770C1;
+	display: none;
+}
+#logout{
+	display: none;
+	color:  #0770C1;
+}
+
+
+
+

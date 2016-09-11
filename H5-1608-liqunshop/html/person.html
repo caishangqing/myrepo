@@ -8,8 +8,7 @@
 <link rel="stylesheet" href="../css/foot.css" />
 <script src="../jq/jqm.js"></script>
 <script src="../jq/jquery.cookie.js"></script>
-<script src="../jq/login.js"></script>
-<script src="../jq/login.js"></script>
+<script src="../jq/base.js"></script>
 </head>
 
 <body>
@@ -17,17 +16,18 @@
 <!--顶部信息-->
 <div class="header-info cbody">
 <div id="headLoginInfo" class="fl">
-Hi，欢迎来到利群商城！
-<a href="javascript:;">请登录 </a>
-<a href="javascript:;">免费注册</a>
+Hi，<span id="username"></span>欢迎来到利群商城！
+<a id="login" href="javascript:;"  >请登录 </a>
+<a id="regist" href="javascript:;" >免费注册</a>
+<a id="logout" href="../index.html" >退出</a>
 </div>
 <ul class="header-info-right">
-<li><a href="javascript:;">我的订单</a>
+<li><a href="javascript:;" id="myorder">我的订单</a>
 </li>
 <li class="header-spacing">|</li>
 <li>
 <img class="header-icon fl" alt="" src="../imgs/index-img/member_center.jpg" />
-<a href="javascript:;">会员中心</a>
+<a href="javascript:;" id="person">会员中心</a>
 </li>
 <li class="header-spacing">|</li>
 <li class="server">
@@ -70,7 +70,7 @@ Hi，欢迎来到利群商城！
 <!-- 搜索行 -->
 <div class="header-search cbody">
 <h1 class="header-logo">利群商城
-<a href="javascript:;">
+<a href="../index.html">
 <img class="fl"   src="../imgs/index-img/logo.jpg" alt="" />
 </a>
 <div class="header-logo-ad">
@@ -111,7 +111,7 @@ Hi，欢迎来到利群商城！
 <!--购物车-->
 <div class="header-search-cart">
 <div class="fl relative">
-<a href="javascript:;">
+<a href="javascript:;" id="shopcar">
 <img src="../imgs/index-img/go_cart.jpg" alt="" />
 </a>
 <div class="headerCarCount">0</div>
@@ -2084,7 +2084,7 @@ Hi，欢迎来到利群商城！
 <input type="radio" name="user_sex" class="user_sex" />女
 </div>
 <div class="pic_row">
-<input type="button" value="" class="person_submit" />
+<input type="submit" value="" class="person_submit" />
 </div>
 </div>
 </form>

@@ -24,7 +24,6 @@
 	vertical-align: middle;
 }
 .content .loginbox {
-	height: 230px;
 	width: 287px;
 	padding: 20px;
 	border: 1px solid #D3D3D3;
@@ -118,9 +117,17 @@
 	vertical-align: middle;
 }
 
-
-
-
-
+#login_form div.showmsg{
+	height: 30px;
+	border: 1px solid #E4393C;
+	color: #E4393C;
+	line-height: 30px;
+	font-size: 12px;
+	text-indent: 50px;
+	background:#FFEBEB url(../imgs/login-img/Warning.jpg) no-repeat 20px center;
+}
+#login_form .showmsg label{
+	margin-left: 50px;
+}
 
 

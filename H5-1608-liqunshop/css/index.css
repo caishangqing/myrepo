@@ -506,13 +506,3 @@ vertical-align: middle;
 .floor5 .tab-content .tab-content-item{
 	width: 195px!important;
 }
-
-#username{
-	padding: 0 10px;
-	color: #0770C1;
-	display: none;
-}
-#logout{
-	display: none;
-	color:  #0770C1;
-}

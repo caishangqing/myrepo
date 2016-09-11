@@ -7,6 +7,9 @@
 <link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
 <link rel="stylesheet" type="text/css" href="../css/head_shop.css" />
 <script src="../jq/jqm.js"></script>
+<script src="../jq/base.js" type="text/javascript" charset="utf-8"></script>
+<script src="../jq/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="../jq/shopcar.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 
@@ -28,9 +31,9 @@
 
 <ul class="nt_right">
 <li>您好：
-<a href="javascript:;" class="user_name">用户名</a>
-<a href="javascript:;" class="person">会员中心</a>
-<a href="javascript:;" class="quit">退出</a>
+<a href="javascript:;" id="username" class="user_name"></a>
+<a href="javascript:;" id="person" class="person">会员中心</a>
+<a href="javascript:;" id="logout" class="quit">退出</a>
 </li>
 <li>
 <img src="../imgs/shopcar-img/space_line.jpg"/>
@@ -86,21 +89,7 @@
 </ul>
 </li>
 <li class="cart_goods">
-<ul>
-<li class="goods_name"><img src="../imgs/goods/201608081421385800.jpg"/>
-	<span class="name">集味村双黄白莲蓉月饼720g集味村双黄白莲蓉月饼720g集味村双黄白莲蓉月饼720g集味村双黄白莲蓉月饼720g</span>
-</li>
-<li class="goods_price">¥158.00</li>
-<li class="goods_num">
-	<a href="javascript:;" class="reduce_num"></a>
-	<input type="text" class="show_num" value="1" />
-	<a href="javascript:;" class="add_num"></a>
-</li>
-<li class="goods_total">¥158.00</li>
-<li class="goods_intergral">126</li>
-<li class="goods_option"><a href="javascript:;" class="clear">清除</a></li>
-<li class="goods_state"></li>
-</ul>
+
 </li>
 
 <li class="cart_total">

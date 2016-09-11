@@ -12,8 +12,9 @@
 <link rel="stylesheet" href="../css/foot.css" />
 
 <script src="../jq/jqm.js"></script>
+<script src="../jq/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 <script src="../jq/jquery.lazyload.min.js"></script>
-<script src="../jq/login.js"></script>
+<script src="../jq/base.js" type="text/javascript" charset="utf-8"></script>
 <script src="../jq/search.js"></script>
 </head>
 
@@ -34,17 +35,18 @@
 <!--顶部信息-->
 <div class="header-info cbody">
 <div id="headLoginInfo" class="fl">
-Hi，欢迎来到利群商城！
-<a href="javascript:;">请登录 </a>
-<a href="javascript:;">免费注册</a>
+Hi，<span id="username"></span>欢迎来到利群商城！
+<a id="login" href="login.html">请登录 </a>
+<a id="regist" href="register.html">免费注册</a>
+<a id="logout" href="javascript:;">退出</a>
 </div>
 <ul class="header-info-right">
-<li><a href="javascript:;">我的订单</a>
+<li><a href="javascript:;" id="myorder"  >我的订单</a>
 </li>
 <li class="header-spacing">|</li>
 <li>
 <img class="header-icon fl" alt="" src="../imgs/index-img/member_center.jpg" />
-<a href="javascript:;">会员中心</a>
+<a href="javascript:;" id="person" >会员中心</a>
 </li>
 <li class="header-spacing">|</li>
 <li class="server">
@@ -91,7 +93,7 @@ Hi，欢迎来到利群商城！
 <div class="header-search cbody">
 <h1 class="header-logo">利群商城
 
-<a href="javascript:;">
+<a href="../index.html">
 
 <img class="fl"   src="../imgs/index-img/logo.jpg" alt="" />
 
@@ -99,9 +101,9 @@ Hi，欢迎来到利群商城！
 
 <div class="header-logo-ad">
 
-<a href="javascript:;">
+<a href="javascript:;" >
 
-<img   src="../imgs/index-img/2966.gif"/>
+<img src="../imgs/index-img/2966.gif"/>
 
 </a>
 
@@ -114,7 +116,7 @@ Hi，欢迎来到利群商城！
 <img class="fl" src="../imgs/index-img/search.jpg" alt="" />
 <form action="javascript:;" name="header-search-form" id="header-search-form">
 <input type="text" id="header-search-input" autocomplete="off" name="keyword" />
-<input type="text" id="header-search-btn" value="" />
+<input type="button" id="header-search-btn" value="" />
 </form>
 <ul id="header-search-tip">
 
@@ -141,7 +143,7 @@ Hi，欢迎来到利群商城！
 <!--购物车-->
 <div class="header-search-cart">
 <div class="fl relative">
-<a href="javascript:;">
+<a href="javascript:;" id="shopcar" >
 <img src="../imgs/index-img/go_cart.jpg" alt="" />
 </a>
 <div class="headerCarCount">0</div>
@@ -2165,6 +2167,7 @@ Hi，欢迎来到利群商城！
 </div>
 </div>
 
+
 <!--右边内容-->
 <div class="search_right">
 <div class="sr_class">
@@ -2206,12 +2209,13 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081421385800.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081421385800.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">集味村双黄白莲蓉月饼720g</a>
-<p>商城价：<strong>¥158.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">集味村双黄白莲蓉月饼720g</a>
+<p>商城价：<strong id="goodsPrice">¥158.00</strong>
+<a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2220,12 +2224,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608161158596220.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608161158596220.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">皇家礼饼月饼礼盒450g</a>
-<p>商城价：<strong>¥88.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">皇家礼饼月饼礼盒450g</a>
+<p>商城价：<strong id="goodsPrice" >¥88.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2233,12 +2237,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081153061832.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081153061832.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">稻香村稻香福礼月饼680g</a>
-<p>商城价：<strong>¥180.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">稻香村稻香福礼月饼680g</a>
+<p>商城价：<strong id="goodsPrice" >¥180.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2246,12 +2250,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608161136097614.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608161136097614.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">皇家金秋诚月月饼礼盒650g</a>
-<p>商城价：<strong>¥159.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">皇家金秋诚月月饼礼盒650g</a>
+<p>商城价：<strong id="goodsPrice" >¥159.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2260,12 +2264,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081414216260.jpg" alt="" />
+<img  id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081414216260.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">集味村蛋黄酥月饼504g</a>
-<p>商城价：<strong>¥198.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">集味村蛋黄酥月饼504g</a>
+<p>商城价：<strong id="goodsPrice" >¥198.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2274,12 +2278,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081416149685.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081416149685.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">集味村伍仁贡月月饼礼盒720g</a>
-<p>商城价：<strong>¥188.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">集味村伍仁贡月月饼礼盒720g</a>
+<p>商城价：<strong id="goodsPrice" >¥188.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2287,12 +2291,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081407392692.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081407392692.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">稻香村团团圆圆月饼510g</a>
-<p>商城价：<strong>¥80.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">稻香村团团圆圆月饼510g</a>
+<p>商城价：<strong id="goodsPrice" >¥80.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2300,12 +2304,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081149484889.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081149484889.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">稻香村姑苏颂礼月饼630g</a>
-<p>商城价：<strong>¥198.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">稻香村姑苏颂礼月饼630g</a>
+<p>商城价：<strong id="goodsPrice" >¥198.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2314,12 +2318,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608151605327828.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608151605327828.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">皇家七星伴月月饼礼盒675g</a>
-<p>商城价：<strong>¥148.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">皇家七星伴月月饼礼盒675g</a>
+<p>商城价：<strong id="goodsPrice" >¥148.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2328,12 +2332,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081357053032.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081357053032.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">稻香村京式月饼 630g</a>
-<p>商城价：<strong>¥138.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a id="goodsName"  href="javascript:;">稻香村京式月饼 630g</a>
+<p>商城价：<strong id="goodsPrice" >¥138.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2341,12 +2345,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081425457371.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081425457371.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">集味村感恩月饼500g</a>
-<p>商城价：<strong>¥98.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">集味村感恩月饼500g</a>
+<p>商城价：<strong id="goodsPrice" >¥98.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2354,12 +2358,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608171133583547.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608171133583547.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">皇家尊月月饼礼盒750g</a>
-<p>商城价：<strong>¥179.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">皇家尊月月饼礼盒750g</a>
+<p>商城价：<strong id="goodsPrice" >¥179.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2368,12 +2372,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081132129252.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081132129252.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">稻香村金碧辉煌月饼</a>
-<p>商城价：<strong>¥498.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a id="goodsName"  href="javascript:;">稻香村金碧辉煌月饼</a>
+<p>商城价：<strong id="goodsPrice" >¥498.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2382,12 +2386,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608151542124664.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608151542124664.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">皇家招牌月饼礼盒600g</a>
-<p>商城价：<strong>¥118.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">皇家招牌月饼礼盒600g</a>
+<p>商城价：<strong id="goodsPrice" >¥118.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2395,12 +2399,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608161114405575.jpg" alt="" />
+<img  id="goodsPic" class="lazy" data-src="../imgs/search-img/201608161114405575.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">皇家幸福味道月饼礼盒900g</a>
-<p>商城价：<strong>¥189.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">皇家幸福味道月饼礼盒900g</a>
+<p>商城价：<strong id="goodsPrice" >¥189.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>
@@ -2408,12 +2412,12 @@ Hi，欢迎来到利群商城！
 <dl>
 <dt>
 <a href="javascript:;">
-<img class="lazy" data-src="../imgs/search-img/201608081418291342.jpg" alt="" />
+<img id="goodsPic" class="lazy" data-src="../imgs/search-img/201608081418291342.jpg" alt="" />
 </a>
 </dt>
 <dd>
-<a  href="javascript:;">集味村尊礼月饼620g</a>
-<p>商城价：<strong>¥168.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
+<a  id="goodsName" href="javascript:;">集味村尊礼月饼620g</a>
+<p>商城价：<strong id="goodsPrice" >¥168.00</strong><a href="javascript:;" class="addshopcar" >加入购物车</a></p>
 </dd>
 </dl>
 </li>

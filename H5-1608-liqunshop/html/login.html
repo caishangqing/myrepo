@@ -14,8 +14,10 @@ name="keywords">
 <link rel="stylesheet" type="text/css" href="../css/login.css"/>
 <link rel="stylesheet" href="../css/foot.css" />
 <script src="../jq/jqm.js"></script>
+<script src="../jq/validation/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../jq/jquery.cookie.js"></script>
 <script src="../jq/login.js"></script>
+<script src="../jq/base.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div class="cbody">
@@ -35,8 +37,8 @@ name="keywords">
 <div class="header-info cbody">
 <div id="headLoginInfo" class="fl">
 Hi，欢迎来到利群商城！
-<a href="javascript:;">请登录 </a>
-<a href="javascript:;">免费注册</a>
+<a href="login.html">请登录 </a>
+<a href="register.html">免费注册</a>
 </div>
 <ul class="header-info-right">
 <li><a href="javascript:;">我的订单</a>
@@ -87,7 +89,7 @@ Hi，欢迎来到利群商城！
 <!-- 搜索行 -->
 <div class="header-search cbody">
 <h1 class="header-logo">利群商城
-<a href="javascript:;">
+<a href="../index.html">
 <img class="fl"   src="../imgs/index-img/logo.jpg" alt="" />
 </a>
 <div class="header-logo-ad">
@@ -2032,7 +2034,7 @@ Hi，欢迎来到利群商城！
 <div class="bgimg">
 </div>
 <div class="loginbox">
-<h2>商城会员<span><img src="../imgs/login-img/right.jpg" alt="" /> 立即注册</span></h2>
+<h2>商城会员<span><a href="register.html"><img src="../imgs/login-img/right.jpg" alt="" /> 立即注册</span></a></h2>
 <form action="" id="login_form">
 <div class="login_form_id">
 <label class="for_id" for="id"></label>
@@ -2043,7 +2045,7 @@ Hi，欢迎来到利群商城！
 <input type="password" placeholder="密码" autocomplete="off" id="password" name="password" />
 </div>
 <a class="forget" href="javascript:;">忘记密码？</a>
-<input type="button" value="登录" class="submit" />
+<input type="submit" value="登录" class="submit" />
 <div class="other_login">
 快捷登录：
 <span>
