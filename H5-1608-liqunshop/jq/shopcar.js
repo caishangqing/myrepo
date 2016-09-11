@@ -67,6 +67,7 @@ $(function() {
 
 	//增加商品
 	function createPage() {
+		$(".cart_goods").html("");
 		var oCar = ($.type($.cookie("goods")) != "undefined") ? JSON.parse($.cookie("goods")) : null;
 		if(oCar) {
 			$.each(oCar, function(index, obj) {
@@ -87,15 +88,74 @@ $(function() {
 	$(".cart_goods").on("click", ".reduce_num", function(e) {
 		var
 			$oUl = $(this).parent().parent(),
-			goodsName =$oUl.find(".name").text(),
+			goodsName = $oUl.find(".name").text(),
 			goodsPrice = $oUl.find(".goods_price").text(),
 			goodsPic = $oUl.find(".goods_name img").attr("src"),
-			goodsNum = $oUl.find(".show_num")
-
+			goodsNum = parseInt($oUl.find(".show_num").val());
+		if(goodsNum > 1) {
+			var oTemp = {};
+			oTemp.gName = goodsName;
+			oTemp.gPrice = goodsPrice;
+			oTemp.gPic = goodsPic;
+			oTemp.gNum = 1;
 			goodsCookie({
-				cookiename:"goods",
-
+				cookiename: "goods",
+				aTar: oTemp,
+				delete: true
 			})
+			createPage();
+		}
 	})
 
+	$(".cart_goods").on("click", ".add_num", function(e) {
+		var
+			$oUl = $(this).parent().parent(),
+			goodsName = $oUl.find(".name").text(),
+			goodsPrice = $oUl.find(".goods_price").text(),
+			goodsPic = $oUl.find(".goods_name img").attr("src"),
+			goodsNum = parseInt($oUl.find(".show_num").val());
+			var oTemp = {};
+			oTemp.gName = goodsName;
+			oTemp.gPrice = goodsPrice;
+			oTemp.gPic = goodsPic;
+			oTemp.gNum = 1;
+			goodsCookie({
+				cookiename: "goods",
+				aTar: oTemp,
+				delete: false
+			})
+			createPage();
+	})
+
+$(".cart_goods").on("click", ".clear", function(e) {
+		if(confirm("亲,您真的不想要了吗？")){
+			var
+			$oUl = $(this).parent().parent(),
+			goodsName = $oUl.find(".name").text(),
+			goodsPrice = $oUl.find(".goods_price").text(),
+			goodsPic = $oUl.find(".goods_name img").attr("src"),
+			goodsNum = parseInt($oUl.find(".show_num").val());
+			var oTemp = {};
+			oTemp.gName = goodsName;
+			oTemp.gPrice = goodsPrice;
+			oTemp.gPic = goodsPic;
+			oTemp.gNum = 999;
+			goodsCookie({
+				cookiename: "goods",
+				aTar: oTemp,
+				delete: true
+			})
+			createPage();
+		}
+	})
+
+
+
+
+
+
+
+
+
 })
+

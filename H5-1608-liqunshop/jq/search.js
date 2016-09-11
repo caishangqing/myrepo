@@ -50,7 +50,7 @@ $(function() {
 				height: 0,
 				width: 0,
 				opacity: 0,
-			}, 1500, function() {
+			}, 1000, function() {
 				$temp.remove();
 				//显示数量
 				oTemp.gName = goodsName;
