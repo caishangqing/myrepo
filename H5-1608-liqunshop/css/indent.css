@@ -109,12 +109,16 @@
 	color: #cb2d3b;
 	border-bottom: 1px solid #999;
 }
-.f3 table tr td{
+.f3  tr td{
 	border-bottom: 1px solid #eee;
 }
-.f3 table tr td {
+.f3 tr td{
 	text-align: center;
 }
+.f3 tr td a{
+	color: #333;
+}
+
 
 .goods_list td{
 	overflow: hidden;

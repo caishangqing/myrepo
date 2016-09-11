@@ -210,14 +210,14 @@
 	</tr>
 	<tr class="hl" style="background-color: #F3F3F3;">
 		<td></td>
-		<td style="text-align: right;">商品金额：2370.00</td>
-		<td>总重量：12.00</td>
-		<td>配送费：98.00</td>
-		<td>订单金额：2468.00</td>
+		<td style="text-align: right;">商品金额：<a id="goodsprice" href="javascript:;"></a></td>
+		<td>总重量：<a id="weight" href="javascript:;"></a></td>
+		<td>配送费：<a id="postprice" href="javascript:;"></a></td>
+		<td>订单金额：<a id="allprice" href="javascript:;"></a></td>
 	</tr>
 	<tr class="hl">
 		<td colspan="4"></td>
-		<td>全部费用：<font style="color: red;font-size: 18px;">2468.00</font></td>
+		<td>全部费用：<font id="total" style="color: red;font-size: 18px;">2468.00</font></td>
 	</tr>
 	<tr>
 		<td colspan="5" style="text-align: left; text-indent: 20px;" >注意：请认真核对您购买的商品。</td>
@@ -263,22 +263,22 @@
 <h2 class="title">其他要求</h2>
 <ul>
 <li><span>收货时间：</span>
-	<input type="radio" name="senddatetype" value="0" />收货时间不限
+	<input type="radio" checked="checked" name="senddatetype" value="0" />收货时间不限
 	<input type="radio" name="senddatetype" value="0" />只工作日（双休日/节假日不用送）
 	<input type="radio" name="senddatetype" value="0" />只双休日/节假日送货（工作日不送）
 </li>
 <li><span>显示价格：</span>
-	<input type="radio" name="showprice" value="0" />送货单显示商品价格
+	<input type="radio" checked="checked" name="showprice" value="0" />送货单显示商品价格
 	<input type="radio" name="showprice" value="1" />送货单不显示商品价格
 </li>
 <li><span>增加备注：</span>
 	是<input type="radio" name="addremark" value="1" />
-	否<input type="radio" name="addremark" value="1" />如果您有特殊要求如发票明细、商品尺码等,请选择"是",并填写订单备注
+	否<input type="radio" checked="checked" name="addremark" value="1" />如果您有特殊要求如发票明细、商品尺码等,请选择"是",并填写订单备注
 </li>
 <li>(注意:一、因物流受到交通情况等各种条件限制,收货时间请勿规定具体时间点。二、因省外的顾客朋友购买大家电需要使用第三方物流配送，运费将根据实际情况进行调整。)</li>
 <li><span>发票类型：</span>
-	<input type="radio" name="showprice" value="0" />普通发票
-	<input type="radio" name="showprice" value="1" />电子发票（建议选择电子发票）
+	<input type="radio" checked="checked" name="type" value="0" />普通发票
+	<input type="radio" name="type" value="1" />电子发票（建议选择电子发票）
 </li>
 </ul>
 </div>
