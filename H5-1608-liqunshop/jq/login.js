@@ -7,7 +7,7 @@ $(function() {
 
 	$("#login_form").validate({
 		submitHandler: function() {
-			$.cookie("user", $("#id").val(), {
+			$.cookie("user", $("#id").val(),{
 				expires: 7,
 				path: "/H5-1608-liqunshop"
 			});

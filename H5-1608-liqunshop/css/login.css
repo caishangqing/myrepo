@@ -76,6 +76,7 @@
 	border: 1px solid #BEBDBD;
 	margin-left: -1px;
 	text-indent: 8px;
+	line-height: 36px;
 	font-size: 14px;
 }
 #login_form .forget {
@@ -129,5 +130,12 @@
 #login_form .showmsg label{
 	margin-left: 50px;
 }
+
+
+
+
+
+
+
 
 
