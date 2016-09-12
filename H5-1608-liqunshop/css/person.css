@@ -95,6 +95,14 @@
 	background: url(../imgs/person-img/mUserb.jpg)no-repeat;
 }
 
+.change_pwd{
+	margin-left: 20px;
+	color: #045AA3;
+	cursor: pointer;
+}
+
+
+
 /*密码更改*/
 
 .pwd_change>*{

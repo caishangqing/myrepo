@@ -137,6 +137,11 @@ $(function() {
 			location.replace("html/shopcar.html?username="+$.cookie("user"))
 		})
 
+	//	购物车里的数量
+		var num=($.type($.cookie("goods")) !="undefined")?JSON.parse($.cookie("goods")).length:0;
+		$(".headerCarCount").text(num);
+
+
 	} else {
 		$("#username,#logout").hide();
 		$("#login,#regist").show();
@@ -157,10 +162,6 @@ $(function() {
 		}
 	})
 
-
-//	购物车里的数量
-	var num=($.type($.cookie("goods")) !="undefined")?JSON.parse($.cookie("goods")).length:0;
-	$(".headerCarCount").text(num);
 
 
 
