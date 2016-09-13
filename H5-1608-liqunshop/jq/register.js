@@ -7,11 +7,11 @@ $().ready(function() {
 		//表单提交事件句柄
 		submitHandler: function(form) {
 
-			$.cookie("user",$("#reg_name").val(),{
-				expires:7,
-				path:"/H5-1608-liqunshop"
+			$.cookie("user", $("#reg_name").val(), {
+				expires: 7,
+				path: "/H5-1608-liqunshop"
 			});
-			location.href="../";
+			location.href = "../";
 		},
 
 		rules: {
@@ -32,7 +32,7 @@ $().ready(function() {
 				required: true,
 				code: true
 			},
-			agree:"required"
+			agree: "required"
 
 		},
 		messages: {
@@ -51,17 +51,15 @@ $().ready(function() {
 			reg_test: {
 				required: "请输入验证码!",
 			},
-			agree:"请阅读交易条款"
+			agree: "请阅读交易条款"
 		},
-
-
 
 		//		更改错误显示地方
 		errorPlacement: function(error, element) {
 			error.appendTo(element.parent());
 		},
 		//	错误后获得焦点移除错误
-//		focusCleanup: true,
+		//		focusCleanup: true,
 
 		unhighlight: function(element, errorClass) {
 			if($(element).val() != "") {
@@ -77,9 +75,6 @@ $().ready(function() {
 		},
 
 	})
-
-
-
 
 	//添加自定义邮箱或者手机号验证
 	$.validator.addMethod('emailorphone', function(value, element) {
@@ -114,54 +109,42 @@ $().ready(function() {
 		createCode();
 	});
 
-
-
 	//自动补全
 	$("#reg_name").autocomplete({
-		 source: function (request, response) {//request是用来获取输入值而response是用来全部呈现数据源
-                var hosts = ['qq.com', '168.com', '126.com', 'sina.com', 'gmail.com', 'hotmail.com', 'sohu.com', 'yahoo.com'],
-                term = request.term,	   		//获取用户输入内容
-                name = term, 					//邮箱的用户名
-                host = '',					//邮箱的域名
-                ix = term.indexOf('@'),		//@的位置
-                result = [];					//提示的结果集
-                //结果第一条为自己输入的值
-                result.push(term);
-                //当@有的时候，重新分配用户名和域名
-                if (ix > -1) {
-                    name = term.slice(0, ix);
-                    host = term.slice(ix + 1);
-                }
-                if (name) {
-                //如果用户名已经输入@和后面的域名，
-                // 那么就找到相关的域名提示比如a@1就提示a@168.com，
-                // 如果用户还没有输入@和后面的内容，
-                // 那么就把所有域名都提示出来
-                var findedHosts = (host ? $.grep(host, function (value, index) {
-                    return value.indexOf(host) > -1;
-                }) : hosts),
-                //最终列表中的邮箱
-                findedResults = $.map(findedHosts, function (value, index) {
-                    return name + '@' + value;
-                });
-                //增加到result数组中一个自我输入
-                result = result.concat(findedResults);
-            }
-            response(result);
-        },
-        delay: 0,
-        autoFocus: true
+		source: function(request, response) { //request是用来获取输入值而response是用来全部呈现数据源
+			var hosts = ['qq.com', '168.com', '126.com', 'sina.com', 'gmail.com', 'hotmail.com', 'sohu.com', 'yahoo.com'],
+				term = request.term, //获取用户输入内容
+				name = term, //邮箱的用户名
+				host = '', //邮箱的域名
+				ix = term.indexOf('@'), //@的位置
+				result = []; //提示的结果集
+			//结果第一条为自己输入的值
+			result.push(term);
+			//当@有的时候，重新分配用户名和域名
+			if(ix > -1) {
+				name = term.slice(0, ix);
+				host = term.slice(ix + 1);
+			}
+			if(name) {
+				//如果用户名已经输入@和后面的域名，
+				// 那么就找到相关的域名提示比如a@1就提示a@168.com，
+				// 如果用户还没有输入@和后面的内容，
+				// 那么就把所有域名都提示出来
+				var findedHosts = (host ? $.grep(host, function(value, index) {
+						return value.indexOf(host) > -1;
+					}) : hosts),
+					//最终列表中的邮箱
+					findedResults = $.map(findedHosts, function(value, index) {
+						return name + '@' + value;
+					});
+				//增加到result数组中一个自我输入
+				result = result.concat(findedResults);
+			}
+			response(result);
+		},
+		delay: 0,
+		autoFocus: true
 
 	});
-
-
-
-
-
-
-
-
-
-
 
 })

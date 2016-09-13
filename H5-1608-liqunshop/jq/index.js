@@ -110,7 +110,7 @@ $(function() {
 		if(e.type == "click") {
 			$(this).siblings().each(function() {
 				$(this).find("img").attr({
-					"src": "imgs/index-img/nav" + ($(this).index() + 1) + ".jpg",
+					"src": "imgs/index-img/nav" + ($(this).index()+1) + ".jpg",
 					"data-on": ""
 				})
 			})
