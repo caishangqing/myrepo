@@ -407,7 +407,7 @@ a {
 #list li:hover{
 	background-color:#ccc ;
 }
-#list li:active{
+#list li.active{
 	background-color:#ccc ;
 }
 #header-search-form input {

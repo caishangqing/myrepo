@@ -166,25 +166,50 @@ $(function() {
 		}
 	})
 
-	//跨域获取数据
 
-	$("#header-search-input").on("input propertychange", function() {
-		if($(this).val() != "") {
-			var $script = $("<script>");
-			$script.attr("src", "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + $(this).val() + "&cb=callback")
-			$("#header-search-form").append($script);
-			$script.remove();
-		} else {
-			$("#list").html("");
+
+	var itemIndex=-1;//初始化显示的序号
+	//跨域获取数据
+	$("#header-search-input").on("keyup", function(e) {
+		if($(this).val()!=""&&e.which!=40&&e.which!==38&&e.which!==13){
+			$.ajax({
+				type:"get",
+				url:"http://www.liqunshop.com//Home/GetSearch?keyWords="+ $(this).val(),
+				dataType:"jsonp",
+				jsonp:"callback",
+				success:function(obj){
+						var sHtml = "";
+						$.each(obj, function(index,n) {
+							return  sHtml+="<li><a href='javascript:;'>"+n.keywords+"</a></li>";
+						});
+						if(obj.length!=0){
+							$("#list").html(sHtml).slideDown(100);
+						}
+				}
+			});
+		}else{
+			var itemCount=$("#list li").length-1;
+			if(e.which==40){			//向下
+				$("#list li").eq(itemIndex=itemIndex<itemCount?++itemIndex:0).addClass("active").siblings().removeClass("active");
+			}else if(e.which==38){		//向上
+				$("#list li").eq(itemIndex=itemIndex>=0?--itemIndex:itemCount-1).addClass("active").siblings().removeClass("active");
+			}else if(e.which==13){		//回车
+				$(this).val($("#list li").eq(itemIndex).text());
+				$("#list").html("").slideUp(100);
+				itemIndex=-1;
+			}
 		}
 	})
-	//事件委托 点击li把内容添加到input中
+	//事件委托 点击li把内容添加到input
 	$("#list").on("click", "li", function(e) {
+		e.stopPropagation();
 		$("#header-search-input").val($(this).text());
 		$(e.delegateTarget).slideUp(200).html("");
 	})
 
-
+	$(document).on("click",function(){
+		$("#list").slideUp(200).html("");
+	})
 
 
 
@@ -193,15 +218,6 @@ $(function() {
 
 
 })
-
-
-	function callback(obj) {
-		var sHtml = "";
-		$.each(obj.s, function(index,n) {
-			sHtml+="<li><a href='javascript:;'>"+n+"</a></li>"
-		});
-		$("#list").html(sHtml).slideDown(200);
-	}
 
 
 
